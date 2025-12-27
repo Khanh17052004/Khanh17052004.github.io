@@ -126,4 +126,4 @@ weight: 1
     Video dưới đây ghi lại quá trình vận hành thực tế của hệ thống, bao gồm kịch bản Auto Scaling tự động và khả năng chịu lỗi khi giả lập sự cố.
 </p>
 
-{{< video src="/videos/demo-aws.mp4" >}}
+{{< video src="/videos/demo_aws1.mp4" >}}

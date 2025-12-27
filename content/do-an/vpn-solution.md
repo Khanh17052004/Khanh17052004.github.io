@@ -137,4 +137,4 @@ Instance chạy Ubuntu nằm tại Public Subnet. Được gắn <b>Elastic IP</
     Video dưới đây ghi lại quá trình vận hành thực tế của hệ thống, bao gồm kịch bản cách vận hành VPN
 </p>
 
-{{< video src="/videos/demo-vpn.mp4" >}}
+{{< video src="/videos/demo_vpn1.mp4" >}}

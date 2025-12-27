@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Nguyen Truong Minh Khanh - Network Admin</title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:57617/</link>
     <description>Recent content on Nguyen Truong Minh Khanh - Network Admin</description>
     <generator>Hugo -- 0.153.2</generator>
     <language>vi</language>
     <lastBuildDate>Tue, 24 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:57617/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Triển khai Hạ tầng Mạng Doanh nghiệp trên AWS</title>
-      <link>http://localhost:1313/do-an/aws-infrastructure/</link>
+      <link>http://localhost:57617/do-an/aws-infrastructure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/do-an/aws-infrastructure/</guid>
+      <guid>http://localhost:57617/do-an/aws-infrastructure/</guid>
       <description>Thiết kế hệ thống High Availability và Auto Scaling trên nền tảng Cloud.</description>
     </item>
     <item>
       <title>Xây dựng hệ thống VPN Client-to-Site với OpenVPN trên AWS</title>
-      <link>http://localhost:1313/do-an/vpn-solution/</link>
+      <link>http://localhost:57617/do-an/vpn-solution/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/do-an/vpn-solution/</guid>
+      <guid>http://localhost:57617/do-an/vpn-solution/</guid>
       <description>Giải pháp truy cập an toàn vào Private Subnet thông qua Internet Gateway và OpenVPN.</description>
     </item>
     <item>
       <title>Chứng Chỉ &amp; Bằng Cấp</title>
-      <link>http://localhost:1313/certificates/</link>
+      <link>http://localhost:57617/certificates/</link>
       <pubDate>Tue, 24 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/certificates/</guid>
+      <guid>http://localhost:57617/certificates/</guid>
       <description>&lt;style&gt;
 /* CSS Cũ giữ nguyên */
 .post-title{margin-bottom:40px;text-align:center}.post-meta{display:none}.cert-container{display:flex;flex-direction:column;gap:30px;font-family:&#39;Segoe UI&#39;,sans-serif;max-width:800px;margin:0 auto}
@@ -54,7 +54,7 @@
 &lt;div class=&#34;cert-container&#34;&gt;
 &lt;div class=&#34;cert-card&#34; onclick=&#34;showCert(&#39;/network.png&#39;)&#34;&gt; 
 &lt;div class=&#34;cert-img-box&#34;&gt;
-&lt;img src=&#34;http://localhost:1313/network.png&#34; alt=&#34;Networking Basics Badge&#34;&gt;
+&lt;img src=&#34;http://localhost:57617/network.png&#34; alt=&#34;Networking Basics Badge&#34;&gt;
 &lt;/div&gt;
 &lt;div class=&#34;cert-info&#34;&gt;
 &lt;div class=&#34;cert-header&#34;&gt;
@@ -75,7 +75,7 @@
 &lt;/div&gt;
 &lt;div class=&#34;cert-card&#34; onclick=&#34;showCert(&#39;/java1.png&#39;)&#34;&gt;
 &lt;div class=&#34;cert-img-box&#34;&gt;
-&lt;img src=&#34;http://localhost:1313/java1.png&#34; alt=&#34;JS Essentials 1 Badge&#34;&gt;
+&lt;img src=&#34;http://localhost:57617/java1.png&#34; alt=&#34;JS Essentials 1 Badge&#34;&gt;
 &lt;/div&gt;
 &lt;div class=&#34;cert-info&#34;&gt;
 &lt;div class=&#34;cert-header&#34;&gt;
@@ -96,7 +96,7 @@
 &lt;/div&gt;
 &lt;div class=&#34;cert-card&#34; onclick=&#34;showCert(&#39;/java2.png&#39;)&#34;&gt;
 &lt;div class=&#34;cert-img-box&#34;&gt;
-&lt;img src=&#34;http://localhost:1313/java2.png&#34; alt=&#34;JS Essentials 2 Badge&#34;&gt;
+&lt;img src=&#34;http://localhost:57617/java2.png&#34; alt=&#34;JS Essentials 2 Badge&#34;&gt;
 &lt;/div&gt;
 &lt;div class=&#34;cert-info&#34;&gt;
 &lt;div class=&#34;cert-header&#34;&gt;
@@ -117,7 +117,7 @@
 &lt;/div&gt;
 &lt;div class=&#34;cert-card card-school&#34; onclick=&#34;showCert(&#39;/hutech.png&#39;)&#34;&gt;
 &lt;div class=&#34;cert-img-box&#34;&gt;
-&lt;img src=&#34;http://localhost:1313/hutech.png&#34; alt=&#34;HUTECH Logo&#34;&gt;
+&lt;img src=&#34;http://localhost:57617/hutech.png&#34; alt=&#34;HUTECH Logo&#34;&gt;
 &lt;/div&gt;
 &lt;div class=&#34;cert-info&#34;&gt;
 &lt;div class=&#34;cert-header&#34;&gt;
@@ -159,16 +159,16 @@ closeModal();
     </item>
     <item>
       <title>Cisco Certified Network Associate (CCNA)</title>
-      <link>http://localhost:1313/certifications/ccna/</link>
+      <link>http://localhost:57617/certifications/ccna/</link>
       <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/certifications/ccna/</guid>
+      <guid>http://localhost:57617/certifications/ccna/</guid>
       <description>Chứng chỉ xác nhận kiến thức nền tảng vững chắc về hạ tầng mạng, định tuyến và chuyển mạch.</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/about/</link>
+      <link>http://localhost:57617/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>http://localhost:57617/about/</guid>
       <description>&lt;style&gt;
 /* --- CONTAINER CHÍNH (Chia 2 cột) --- */
 .about-container {
@@ -269,7 +269,7 @@ padding-top: 15px;
 &lt;/style&gt;
 &lt;div class=&#34;about-container&#34;&gt;
 &lt;div class=&#34;about-left-col&#34;&gt;
-&lt;img src=&#34;http://localhost:1313/avata.jpg&#34; class=&#34;profile-img&#34; alt=&#34;Minh Khanh Portrait&#34;&gt;
+&lt;img src=&#34;http://localhost:57617/avata.jpg&#34; class=&#34;profile-img&#34; alt=&#34;Minh Khanh Portrait&#34;&gt;
 &lt;div class=&#34;role-badge&#34;&gt;
 &lt;span class=&#34;role-title&#34;&gt;FUTURE NETWORK ADMIN&lt;/span&gt;
 &lt;span class=&#34;role-sub&#34;&gt;HUTECH UNIVERSITY&lt;/span&gt;
@@ -282,9 +282,9 @@ padding-top: 15px;
     </item>
     <item>
       <title>Liên Hệ</title>
-      <link>http://localhost:1313/contact/</link>
+      <link>http://localhost:57617/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/contact/</guid>
+      <guid>http://localhost:57617/contact/</guid>
       <description>Contact Info</description>
     </item>
   </channel>
