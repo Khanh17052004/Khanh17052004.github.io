@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chứng chỉ &amp; Bằng cấp on Nguyen Truong Minh Khanh - Network Admin</title>
+    <link>http://localhost:1313/certifications/</link>
+    <description>Recent content in Chứng chỉ &amp; Bằng cấp on Nguyen Truong Minh Khanh - Network Admin</description>
+    <generator>Hugo</generator>
+    <language>vi</language>
+    <lastBuildDate>Sun, 15 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/certifications/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cisco Certified Network Associate (CCNA)</title>
+      <link>http://localhost:1313/certifications/ccna/</link>
+      <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/certifications/ccna/</guid>
+      <description>Chứng chỉ xác nhận kiến thức nền tảng vững chắc về hạ tầng mạng, định tuyến và chuyển mạch.</description>
+    </item>
+  </channel>
+</rss>
