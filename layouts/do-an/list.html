@@ -1,0 +1,40 @@
+{{- define "main" }}
+
+<div class="starfall-bg">
+    <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+    <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+</div>
+
+<div class="project-list-container">
+    <div class="project-page-header">
+        <h1 class="glitch-name">PROJECTS </h1>
+    </div>
+
+    <div class="project-list-wrapper">
+        {{- range .Paginator.Pages }}
+        <a class="vertical-hub-card" href="{{ .Permalink }}">
+            <div class="hub-card-body">
+                <h3 class="hub-title">
+                    <span class="prompt">➜</span> {{ .Title }}
+                </h3>
+                <div class="hub-summary">
+                    {{ .Summary | plainify | truncate 120 }} </div>
+                <div class="hub-meta">ACCESS FILE >></div>
+            </div>
+        </a>
+        {{- end }}
+    </div>
+
+    {{- if gt .Paginator.TotalPages 1 }}
+    <div class="hub-pagination">
+        {{- if .Paginator.HasPrev }}
+        <a class="hub-page-btn" href="{{ .Paginator.Prev.URL }}">PREV</a>
+        {{- end }}
+        <span class="hub-page-info">/// PAGE {{ .Paginator.PageNumber }} ///</span>
+        {{- if .Paginator.HasNext }}
+        <a class="hub-page-btn" href="{{ .Paginator.Next.URL }}">NEXT</a>
+        {{- end }}
+    </div>
+    {{- end }}
+</div>
+{{- end }}

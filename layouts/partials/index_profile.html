@@ -1,0 +1,59 @@
+{{- if .Site.Params.profileMode.enabled }}
+<div class="cyber-container">
+    <div class="cyber-card-wide">
+        
+        <div class="wide-header-section">
+            <div class="avatar-wrapper-center">
+                <div class="avatar-glow-ring big-glow">
+                    {{- if .Site.Params.profileMode.imageUrl }}
+                        <img src="{{ .Site.Params.profileMode.imageUrl | absURL }}" alt="avatar" />
+                    {{- end }}
+                    <div class="online-dot" title="System Online"></div>
+                </div>
+            </div>
+
+            <div class="status-badge-center">SYSTEM STATUS: <span class="blink">ONLINE</span></div>
+            <h1 class="glitch-name big-name">{{ .Site.Params.profileMode.title | default .Site.Title }}</h1>
+            <h2 class="cyber-role">{{ .Site.Params.profileMode.subtitle }}</h2>
+        </div>
+
+        <div class="wide-body-section">
+            <div class="cyber-contact-bar">
+                {{- if .Site.Params.profileMode.email }}
+                <div class="contact-pill">
+                    <span class="contact-icon">📧</span>
+                    <a href="mailto:{{ .Site.Params.profileMode.email }}">{{ .Site.Params.profileMode.email }}</a>
+                </div>
+                {{- end }}
+                {{- if .Site.Params.profileMode.phone }}
+                <div class="contact-pill">
+                    <span class="contact-icon">📞</span>
+                    <a href="tel:{{ .Site.Params.profileMode.phone }}">{{ .Site.Params.profileMode.phone }}</a>
+                </div>
+                {{- end }}
+                <div class="contact-pill">
+                    <span class="contact-icon">📍</span>
+                    <span>TP. Hồ Chí Minh</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="wide-footer-section">
+            <div class="cyber-buttons big-btns">
+                {{- range .Site.Params.profileMode.buttons }}
+                <a class="cyber-btn" href="{{ .url }}">{{ .name }}</a>
+                {{- end }}
+            </div>
+
+            <div class="cyber-social-bar">
+                {{- range .Site.Params.socialIcons }}
+                <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" class="social-icon-link" title="{{ .name }}">
+                    {{- partial "svg.html" . }}
+                </a>
+                {{- end }}
+            </div>
+        </div>
+
+    </div>
+</div>
+{{- end }}

@@ -1,0 +1,76 @@
+<div class="music-widget" id="musicToggle">
+    <div class="music-visualizer">
+        <span></span><span></span><span></span><span></span>
+    </div>
+    <div class="music-text">MUSIC: <span id="musicStatus">OFF</span></div>
+</div>
+
+<audio id="bgAudio" loop>
+    <source src="/music.mp3" type="audio/mpeg">
+    <source src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const musicBtn = document.getElementById('musicToggle');
+        const bgAudio = document.getElementById('bgAudio');
+        const musicStatus = document.getElementById('musicStatus');
+        
+        // Cấu hình âm lượng vừa phải
+        bgAudio.volume = 0.1;
+
+        // Hàm bật/tắt nhạc
+        function toggleMusic() {
+            if (bgAudio.paused) {
+                bgAudio.play().then(() => {
+                    updateUI(true);
+                }).catch(e => console.log("Chặn Autoplay: Cần tương tác người dùng"));
+            } else {
+                bgAudio.pause();
+                updateUI(false);
+            }
+        }
+
+        // Hàm cập nhật giao diện nút
+        function updateUI(isPlaying) {
+            if (isPlaying) {
+                musicStatus.innerText = "ON";
+                musicBtn.classList.add('active');
+            } else {
+                musicStatus.innerText = "OFF";
+                musicBtn.classList.remove('active');
+            }
+        }
+
+        // Bắt sự kiện click vào nút
+        musicBtn.addEventListener('click', toggleMusic);
+
+        // === TÍNH NĂNG ĐẶC BIỆT: TỰ PHÁT KHI VÀO "VỀ TÔI" ===
+        const currentPath = window.location.pathname;
+        
+        // Kiểm tra nếu đường dẫn chứa chữ "ve-toi" hoặc "about"
+        if (currentPath.includes("ve-toi") || currentPath.includes("about")) {
+            console.log("Đang ở trang Về Tôi -> Kích hoạt nhạc");
+            
+            // Cố gắng tự phát nhạc
+            var promise = bgAudio.play();
+            
+            if (promise !== undefined) {
+                promise.then(_ => {
+                    // Nếu trình duyệt cho phép -> Cập nhật giao diện thành ON
+                    updateUI(true);
+                }).catch(error => {
+                    // Nếu trình duyệt chặn (do chưa click gì), hiện thông báo nhỏ
+                    console.log("Autoplay bị chặn, chờ người dùng bấm.");
+                    // Mẹo: Kích hoạt giả lập click nếu người dùng di chuột
+                    document.body.addEventListener('click', function() {
+                        if(bgAudio.paused) toggleMusic();
+                    }, { once: true });
+                });
+            }
+        }
+        
+        // Giữ trạng thái nhạc khi chuyển trang (nếu dùng Turbolinks/Swup - Nâng cao)
+        // Với Hugo tĩnh, mỗi lần chuyển trang nhạc sẽ load lại, code trên sẽ xử lý việc đó.
+    });
+</script>

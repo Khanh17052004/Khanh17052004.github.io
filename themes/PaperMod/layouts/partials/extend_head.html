@@ -1,0 +1,19 @@
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Kiểm tra xem đã có nền sao chưa, nếu chưa thì tạo mới
+        if (!document.querySelector('.starfall-bg')) {
+            const starContainer = document.createElement('div');
+            starContainer.className = 'starfall-bg';
+            
+            // Tạo 20 ngôi sao (thẻ i)
+            let starsHtml = '';
+            for (let i = 0; i < 20; i++) {
+                starsHtml += '<i></i>';
+            }
+            starContainer.innerHTML = starsHtml;
+            
+            // Chèn vào đầu thẻ body để nó nằm dưới cùng
+            document.body.insertBefore(starContainer, document.body.firstChild);
+        }
+    });
+</script>

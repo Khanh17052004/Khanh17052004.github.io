@@ -1,0 +1,140 @@
+---
+title: "Xây dựng hệ thống VPN Client-to-Site với OpenVPN trên AWS"
+summary: "Giải pháp truy cập an toàn vào Private Subnet thông qua Internet Gateway và OpenVPN."
+weight: 2
+---
+
+<style>
+/* --- 1. HERO BANNER STYLE --- */
+.vpn-hero {
+background: linear-gradient(135deg, #232F3E, #1A1F2C); /* Màu AWS Dark */
+color: white;
+padding: 40px;
+border-radius: 16px;
+margin-bottom: 40px;
+position: relative;
+overflow: hidden;
+box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+border-bottom: 4px solid #FF9900; /* Viền cam AWS */
+display: flex;
+align-items: center;
+gap: 30px;
+}
+.hero-content { flex: 1; z-index: 2; }
+.hero-title { font-size: 2rem; font-weight: 800; margin: 0 0 15px 0; color: #fff; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+.hero-desc { font-size: 1.1rem; opacity: 0.9; line-height: 1.6; }
+/* Icon đám mây lớn trang trí */
+.hero-bg-icon {
+position: absolute; right: -20px; bottom: -20px;
+font-size: 10rem; opacity: 0.05; color: #fff; transform: rotate(-15deg);
+}
+
+/* --- 2. KHUNG MÔ HÌNH (Topology) --- */
+.topology-section {
+text-align: center; margin: 30px 0 50px 0; padding: 25px;
+background: #f8f9fa; border: 2px dashed #ccc; border-radius: 12px;
+}
+.topology-img {
+width: 100%; max-width: 800px; height: auto; border-radius: 8px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+background: white; padding: 10px;
+}
+.topology-caption { margin-top: 15px; color: #666; font-style: italic; font-size: 0.9rem; }
+
+/* --- 3. TECH BLOCKS (Grid) --- */
+.tech-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 50px; }
+.tech-card {
+background: #fff; border: 1px solid #eee; padding: 25px; border-radius: 12px;
+transition: all 0.3s ease; border-left: 4px solid #FF9900; /* Điểm nhấn cam */
+box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+.tech-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.08); }
+.tech-icon { font-size: 1.8rem; margin-bottom: 15px; display: block; }
+.tech-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; color: #232F3E; }
+.tech-desc { font-size: 0.95rem; color: #555; line-height: 1.5; }
+.highlight-ip { background: #eee; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-weight: bold; color: #d63384; }
+
+/* --- 4. RESULTS SECTION --- */
+.result-box {
+background: linear-gradient(to right, rgba(46, 125, 50, 0.05), transparent);
+border-left: 5px solid #2e7d32; padding: 25px; border-radius: 0 12px 12px 0;
+}
+.result-list li { margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px; color: #444; }
+.check-icon { color: #2e7d32; font-weight: bold; font-size: 1.2rem; }
+
+/* Tiêu đề section */
+.section-heading {
+font-size: 1.5rem; font-weight: 700; color: #232F3E; margin-bottom: 25px;
+display: flex; align-items: center; gap: 10px;
+border-bottom: 2px solid #FF9900; padding-bottom: 10px; width: fit-content;
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+.topology-section { background: #1a1a1a; border-color: #444; }
+.topology-img { background: #333; }
+.tech-card { background: #161b22; border-color: #30363d; }
+.tech-title { color: #f0f6fc; }
+.tech-desc, .topology-caption, .result-list li { color: #8b949e; }
+.highlight-ip { background: #333; color: #ff7b72; }
+.section-heading { color: #f0f6fc; }
+}
+</style>
+
+<div class="vpn-hero">
+<div class="hero-content">
+<h1 class="hero-title">AWS Client-to-Site VPN System</h1>
+<div class="hero-desc">
+Xây dựng hệ thống kết nối từ xa an toàn sử dụng <b>OpenVPN</b> trên nền tảng AWS, cho phép Client truy cập Web Server ẩn trong Private Subnet.
+</div>
+</div>
+<div class="hero-bg-icon">☁️</div>
+</div>
+
+<h2 class="section-heading">📐 Mô hình Kiến trúc (Topology)</h2>
+<div class="topology-section">
+<img src="/vpn.png" alt="Sơ đồ Client-to-Site VPN AWS" class="topology-img">
+<div class="topology-caption">
+Hình 1: Kiến trúc VPC với Public/Private Subnet và luồng đi của VPN Tunnel.
+</div>
+</div>
+
+<h2 class="section-heading">🛠 Thành phần Kỹ thuật</h2>
+
+<div class="tech-grid">
+<div class="tech-card">
+<span class="tech-icon">🌐</span>
+<div class="tech-title">Hạ tầng Mạng (VPC)</div>
+<div class="tech-desc">
+Khởi tạo VPC <span class="highlight-ip">10.0.0.0/16</span> chia làm 2 vùng mạng:
+<br>• <b>Public Subnet:</b> <span class="highlight-ip">10.0.1.0/24</span> (Chứa VPN Server).
+<br>• <b>Private Subnet:</b> <span class="highlight-ip">10.0.2.0/24</span> (Chứa Web Server bảo mật).
+</div>
+</div>
+
+<div class="tech-card">
+<span class="tech-icon">🔑</span>
+<div class="tech-title">OpenVPN Server (EC2)</div>
+<div class="tech-desc">
+Instance chạy Ubuntu nằm tại Public Subnet. Được gắn <b>Elastic IP</b> để cung cấp địa chỉ IP tĩnh công cộng, đảm bảo kết nối ổn định cho Client từ Internet.
+</div>
+</div>
+
+<div class="tech-card">
+<span class="tech-icon">🔀</span>
+<div class="tech-title">Routing & Gateway</div>
+<div class="tech-desc">
+<b>Internet Gateway (IGW)</b> gắn vào VPC cho phép giao tiếp ra ngoài. Route Table được cấu hình để định tuyến lưu lượng VPN vào đúng Private Subnet.
+</div>
+</div>
+</div>
+
+<h2 style="border-left: 4px solid #FF9900; padding-left: 10px; margin-bottom: 20px;">
+    🎥 Video Demo Hệ Thống
+</h2>
+
+<p style="margin-bottom: 20px; color: #ccc;">
+    Video dưới đây ghi lại quá trình vận hành thực tế của hệ thống, bao gồm kịch bản cách vận hành VPN
+</p>
+
+{{< video src="/videos/demo-vpn.mp4" >}}

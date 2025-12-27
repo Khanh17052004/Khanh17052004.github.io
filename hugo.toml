@@ -1,0 +1,73 @@
+# SỬA LẠI THÀNH (không có dấu cách)
+baseURL = "https://khanh17052004.github.io/"
+languageCode = "vi"
+title = "Nguyen Truong Minh Khanh - Network Admin"
+theme = "PaperMod"
+
+# Kích hoạt Emoji
+enableEmoji = true
+
+[params]
+    defaultTheme = "dark"
+    description = "Minh Khanh's Portfolio - System & Network Engineering"
+    
+    # --- CẤU HÌNH PROFILE MODE ---
+    [params.profileMode]
+        enabled = true
+        title = "Minh Khanh"
+        subtitle = "Silent Guardian of The Network"
+        imageUrl = "avata.jpg"
+        imageTitle = "Minh Khanh Avatar"
+        
+        # --- SỬA Ở ĐÂY ---
+        imageWidth = 350   # Tăng lên 350 cho to (cũ là 200)
+        imageHeight = 350  # Tăng lên 350 cho to 
+
+        # --- THÊM THÔNG TIN Ở ĐÂY ---
+        email = "nguyentruongminhkhanh17052004@gmail.com"  # Thay bằng email thật của bạn
+        phone = "0909 210 558"           # Thay bằng số điện thoại thật của bạn   
+        
+        # Nút bấm 1: Phong cách AWS (sẽ chỉnh màu bằng CSS)
+        [[params.profileMode.buttons]]
+            name = "☁️ Dự án AWS"
+            url = "/do-an/aws-infrastructure"
+
+        # Nút bấm 2: Phong cách VPN (sẽ chỉnh màu bằng CSS)
+        [[params.profileMode.buttons]]
+            name = "🔐 Giải pháp VPN"
+            url = "/do-an/vpn-solution"
+    
+    # --- MẠNG XÃ HỘI ---
+    [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/Khanh17052004?tab=repositories"
+    [[params.socialIcons]]
+        name = "linkedin"
+        url = "https://www.linkedin.com/in/kh%C3%A1nh-nguy%E1%BB%85n-tr%C6%B0%C6%A1ng-minh-017b8139b/"
+
+[menu]
+  [[menu.main]]
+    identifier = "projects"
+    name = "🚀 Đồ Án"
+    url = "/do-an/"
+    weight = 10
+  [[menu.main]]
+    identifier = "about"
+    name = "👨‍💻 Về Tôi"
+    url = "/about/"
+    weight = 20
+  [[menu.main]]
+    identifier = "certificates"
+    name = "📜 Chứng Chỉ"
+    url = "/certificates/"
+    weight = 30
+  [[menu.main]]
+    identifier = "contact"
+    name = "📧 Liên Hệ"
+    url = "/contact/"
+    weight = 40
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+      
