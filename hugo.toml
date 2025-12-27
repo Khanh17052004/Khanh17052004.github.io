@@ -1,9 +1,8 @@
-# SỬA LẠI THÀNH (không có dấu cách)
 baseURL = 'https://khanh17052004.github.io/'
 languageCode = "vi"
 title = "Nguyen Truong Minh Khanh - Network Admin"
 theme = "PaperMod"
-draft: false
+
 # Kích hoạt Emoji
 enableEmoji = true
 
@@ -16,23 +15,22 @@ enableEmoji = true
         enabled = true
         title = "Minh Khanh"
         subtitle = "Silent Guardian of The Network"
-        imageUrl = "avata.jpg"
+        imageUrl = "avata.jpg" # Đảm bảo ảnh này nằm trong thư mục static/avata.jpg
         imageTitle = "Minh Khanh Avatar"
         
-        # --- SỬA Ở ĐÂY ---
-        imageWidth = 350   # Tăng lên 350 cho to (cũ là 200)
-        imageHeight = 350  # Tăng lên 350 cho to 
+        # Kích thước ảnh
+        imageWidth = 250
+        imageHeight = 250
 
-        # --- THÊM THÔNG TIN Ở ĐÂY ---
-        email = "nguyentruongminhkhanh17052004@gmail.com"  # Thay bằng email thật của bạn
-        phone = "0909 210 558"           # Thay bằng số điện thoại thật của bạn   
+        # Lưu ý: PaperMod mặc định không hiện Email/Phone ở đây
+        # Bạn nên để nó vào phần Liên hệ hoặc Social Icons
         
-        # Nút bấm 1: Phong cách AWS (sẽ chỉnh màu bằng CSS)
+        # Nút bấm 1: Phong cách AWS
         [[params.profileMode.buttons]]
             name = "☁️ Dự án AWS"
             url = "/do-an/aws-infrastructure"
 
-        # Nút bấm 2: Phong cách VPN (sẽ chỉnh màu bằng CSS)
+        # Nút bấm 2: Phong cách VPN
         [[params.profileMode.buttons]]
             name = "🔐 Giải pháp VPN"
             url = "/do-an/vpn-solution"
@@ -44,6 +42,9 @@ enableEmoji = true
     [[params.socialIcons]]
         name = "linkedin"
         url = "https://www.linkedin.com/in/kh%C3%A1nh-nguy%E1%BB%85n-tr%C6%B0%C6%A1ng-minh-017b8139b/"
+    [[params.socialIcons]]
+        name = "email"
+        url = "mailto:nguyentruongminhkhanh17052004@gmail.com"
 
 [menu]
   [[menu.main]]
@@ -66,10 +67,13 @@ enableEmoji = true
     name = "📧 Liên Hệ"
     url = "/contact/"
     weight = 40
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+# Cache ảnh để build nhanh hơn
 [caches]
   [caches.images]
     dir = ':cacheDir/images'

@@ -28,7 +28,7 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest' # Luôn lấy bản mới nhất
-          extended: true # Bắt buộc phải là true để dùng cho theme Kawaii
+          extended: true 
 
       - name: Build
         run: hugo --minify
