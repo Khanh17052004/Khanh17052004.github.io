@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/do-an/aws-infrastructure/</loc>
+    <loc>http://localhost:52207/do-an/aws-infrastructure/</loc>
   </url><url>
-    <loc>http://localhost:1313/do-an/vpn-solution/</loc>
+    <loc>http://localhost:52207/do-an/vpn-solution/</loc>
   </url><url>
-    <loc>http://localhost:1313/certificates/</loc>
+    <loc>http://localhost:52207/certificates/</loc>
     <lastmod>2024-12-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:52207/</loc>
     <lastmod>2024-12-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/certifications/</loc>
+    <loc>http://localhost:52207/certifications/</loc>
     <lastmod>2023-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/cisco/</loc>
+    <loc>http://localhost:52207/tags/cisco/</loc>
     <lastmod>2023-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/certifications/ccna/</loc>
+    <loc>http://localhost:52207/certifications/ccna/</loc>
     <lastmod>2023-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/networking/</loc>
+    <loc>http://localhost:52207/tags/networking/</loc>
     <lastmod>2023-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/routing--switching/</loc>
+    <loc>http://localhost:52207/tags/routing--switching/</loc>
     <lastmod>2023-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:52207/tags/</loc>
     <lastmod>2023-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>http://localhost:52207/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:52207/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/do-an/</loc>
+    <loc>http://localhost:52207/do-an/</loc>
   </url><url>
-    <loc>http://localhost:1313/contact/</loc>
+    <loc>http://localhost:52207/contact/</loc>
   </url>
 </urlset>
