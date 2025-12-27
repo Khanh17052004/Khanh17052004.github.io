@@ -1,9 +1,9 @@
 # SỬA LẠI THÀNH (không có dấu cách)
-baseURL = "https://khanh17052004.github.io/"
+baseURL = 'https://khanh17052004.github.io/'
 languageCode = "vi"
 title = "Nguyen Truong Minh Khanh - Network Admin"
 theme = "PaperMod"
-
+draft: false
 # Kích hoạt Emoji
 enableEmoji = true
 
