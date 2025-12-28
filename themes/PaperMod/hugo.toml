@@ -66,6 +66,11 @@ enableEmoji = true
     name = "📧 Liên Hệ"
     url = "/contact/"
     weight = 40
+  [[menu.main]]
+    identifier = "Kiến thức lập trình mạng"
+    name = "Kiến thức lập trình mạng"
+    url = "/learnings/"
+    weight = 30
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

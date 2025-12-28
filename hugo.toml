@@ -62,12 +62,17 @@ enableEmoji = true
     name = "📜 Chứng Chỉ"
     url = "/certificates/"
     weight = 30
+ 
   [[menu.main]]
     identifier = "contact"
     name = "📧 Liên Hệ"
     url = "/contact/"
     weight = 40
-
+  [[menu.main]]
+    identifier = "learnings"
+    name = "Learnings"
+    url = "/learnings/"
+    weight = 30
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

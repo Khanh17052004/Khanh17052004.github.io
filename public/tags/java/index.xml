@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Java on Nguyen Truong Minh Khanh - Network Admin</title>
+    <link>http://localhost:1313/tags/java/</link>
+    <description>Recent content in Java on Nguyen Truong Minh Khanh - Network Admin</description>
+    <generator>Hugo -- 0.153.2</generator>
+    <language>vi</language>
+    <lastBuildDate>Mon, 22 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bài 1: Tổng quan khoá học</title>
+      <link>http://localhost:1313/learnings/bai-1/</link>
+      <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learnings/bai-1/</guid>
+      <description>GIỚI THIỆU HỌC PHẦN.</description>
+    </item>
+    <item>
+      <title>Bài 3: Quản lý luồng nhập xuất trong Java</title>
+      <link>http://localhost:1313/learnings/bai-3/</link>
+      <pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learnings/bai-3/</guid>
+      <description>Tổng quan về Input/Output Streams trong Java – nền tảng cho xử lý file, console và lập trình mạng.</description>
+    </item>
+    <item>
+      <title>Bài 4: Quản lý địa chỉ kết nối mạng trong Java</title>
+      <link>http://localhost:1313/learnings/bai-4/</link>
+      <pubDate>Thu, 18 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learnings/bai-4/</guid>
+      <description>Tìm hiểu cách Java quản lý địa chỉ mạng thông qua InetAddress, URL, URLConnection và DNS.</description>
+    </item>
+    <item>
+      <title>Bài 5: Lập trình Socket TCP trong Java</title>
+      <link>http://localhost:1313/learnings/bai-5/</link>
+      <pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learnings/bai-5/</guid>
+      <description>Giải thích mô hình Client–Server và cách lập trình Socket TCP trong Java – nền tảng cho giao tiếp mạng tin cậy.</description>
+    </item>
+    <item>
+      <title>Bài 6: Lập trình Socket UDP trong Java</title>
+      <link>http://localhost:1313/learnings/bai-6/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learnings/bai-6/</guid>
+      <description>Giải thích giao thức UDP và cách Java lập trình Socket UDP – nền tảng cho truyền dữ liệu nhanh, không kết nối.</description>
+    </item>
+    <item>
+      <title>Bài 7: Lập trình đa tuyến và xử lý đồng thời</title>
+      <link>http://localhost:1313/learnings/bai-7/</link>
+      <pubDate>Sun, 21 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learnings/bai-7/</guid>
+      <description>Giải thích lập trình đa tuyến và xử lý đồng thời trong Java – nền tảng cho các ứng dụng mạng nhiều client.</description>
+    </item>
+    <item>
+      <title>Bài 8: Multicast UDP và Java RMI</title>
+      <link>http://localhost:1313/learnings/bai-8/</link>
+      <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learnings/bai-8/</guid>
+      <description>Giải thích Multicast UDP (gửi 1-n) và Java RMI (gọi phương thức từ xa) – nền tảng cho ứng dụng nhóm và hệ phân tán.</description>
+    </item>
+  </channel>
+</rss>

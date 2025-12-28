@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="dark">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Lập trình Sockets TCP - Lập trình mạng (Buổi 5) | Nguyen Truong Minh Khanh - Network Admin</title>
+<meta name="keywords" content="Java, Network Programming, TCP, Sockets, Hutech">
+<meta name="description" content="Tổng hợp kiến thức về lập trình TCP Sockets trong Java, mô hình Client-Server và các bài tập thực hành.">
+<meta name="author" content="Trung Nguyen Quang">
+<link rel="canonical" href="http://localhost:1313/learnings/bai-5/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.85574fee1c1228f74465859f2707f07bc5ad342b17397ad7dfb5242f76049225.css" integrity="sha256-hVdP7hwSKPdEZYWfJwfwe8WtNCsXOXrX37UkL3YEkiU=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/learnings/bai-5/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><script>
+    document.addEventListener("DOMContentLoaded", function() {
+        
+        if (!document.querySelector('.starfall-bg')) {
+            const starContainer = document.createElement('div');
+            starContainer.className = 'starfall-bg';
+            
+            
+            let starsHtml = '';
+            for (let i = 0; i < 20; i++) {
+                starsHtml += '<i></i>';
+            }
+            starContainer.innerHTML = starsHtml;
+            
+            
+            document.body.insertBefore(starContainer, document.body.firstChild);
+        }
+    });
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Nguyen Truong Minh Khanh - Network Admin (Alt + H)">Nguyen Truong Minh Khanh - Network Admin</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/do-an/" title="🚀 Đồ Án">
+                    <span>🚀 Đồ Án</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="👨‍💻 Về Tôi">
+                    <span>👨‍💻 Về Tôi</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/learnings/" title="Learnings">
+                    <span>Learnings</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/certificates/" title="📜 Chứng Chỉ">
+                    <span>📜 Chứng Chỉ</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/contact/" title="📧 Liên Hệ">
+                    <span>📧 Liên Hệ</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Lập trình Sockets TCP - Lập trình mạng (Buổi 5)
+    </h1>
+    <div class="post-description">
+      Tổng hợp kiến thức về lập trình TCP Sockets trong Java, mô hình Client-Server và các bài tập thực hành.
+    </div>
+    <div class="post-meta"><span title='2025-11-01 08:00:00 +0700 +07'>November 1, 2025</span>&nbsp;·&nbsp;<span>Trung Nguyen Quang</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="nội-dung-chính">Nội dung chính<a hidden class="anchor" aria-hidden="true" href="#nội-dung-chính">#</a></h2>
+<p>Bài viết này tóm tắt nội dung buổi 5 về <strong>Lập trình Sockets TCP</strong> trong khóa học Lập trình mạng máy tính.</p>
+<ol>
+<li>Khởi động đầu giờ</li>
+<li>Bài tập ví dụ</li>
+<li>Lập trình TCP Sockets</li>
+<li>Truyền cảm hứng</li>
+<li>Bài tập tại lớp</li>
+<li>Trắc nghiệm ôn tập</li>
+<li>Thuyết trình</li>
+<li>Hỏi &amp; Đáp</li>
+</ol>
+<hr>
+<h2 id="1-mô-hình-client-server">1. Mô hình Client-Server<a hidden class="anchor" aria-hidden="true" href="#1-mô-hình-client-server">#</a></h2>
+<p>Các ứng dụng mạng thường hoạt động theo mô hình Client/Server (Ví dụ: Web server/client, Mail server/client).</p>
+<ul>
+<li><strong>Server (Máy chủ):</strong> Cung cấp dịch vụ, luôn chạy và lắng nghe yêu cầu từ client, xử lý và trả kết quả.</li>
+<li><strong>Client (Máy khách):</strong> Gửi yêu cầu dịch vụ đến server và đợi phản hồi.</li>
+</ul>
+<p><strong>Quy trình trao đổi dữ liệu:</strong></p>
+<ol>
+<li>Client gửi Request (yêu cầu) tới Server.</li>
+<li>Server xử lý yêu cầu.</li>
+<li>Server gửi Response (đáp ứng) lại cho Client.</li>
+</ol>
+<hr>
+<h2 id="2-giao-thức-tcp-transmission-control-protocol">2. Giao thức TCP (Transmission Control Protocol)<a hidden class="anchor" aria-hidden="true" href="#2-giao-thức-tcp-transmission-control-protocol">#</a></h2>
+<h3 id="tại-sao-dùng-tcp">Tại sao dùng TCP?<a hidden class="anchor" aria-hidden="true" href="#tại-sao-dùng-tcp">#</a></h3>
+<ul>
+<li><strong>Đáng tin cậy:</strong> Đảm bảo dữ liệu truyền đúng và đủ (tự động gửi lại nếu mất gói tin).</li>
+<li><strong>Luồng dữ liệu tin cậy:</strong> Dữ liệu không bị thay đổi hoặc lẫn lộn.</li>
+<li><strong>Kiểm soát luồng (Flow Control):</strong> Tránh làm người nhận quá tải.</li>
+<li><strong>Kiểm soát lỗi (Error Control):</strong> Đảm bảo dữ liệu đến đích chính xác.</li>
+<li><strong>Giao tiếp hai chiều (Full-duplex):</strong> Cho phép truyền/nhận đồng thời.</li>
+</ul>
+<h3 id="cơ-chế-hoạt-động">Cơ chế hoạt động<a hidden class="anchor" aria-hidden="true" href="#cơ-chế-hoạt-động">#</a></h3>
+<ol>
+<li><strong>Điều khiển luồng</strong></li>
+<li><strong>Phân đoạn gói tin TCP</strong></li>
+<li><strong>Quy trình Bắt tay 3 bước (3-Way Handshake):</strong>
+<ul>
+<li>Thiết lập kết nối</li>
+<li>Truyền dữ liệu</li>
+<li>Giải phóng kết nối</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="3-lập-trình-socket-trong-java">3. Lập trình Socket trong Java<a hidden class="anchor" aria-hidden="true" href="#3-lập-trình-socket-trong-java">#</a></h2>
+<p>Trong Java, <code>java.net.Socket</code> và <code>java.net.ServerSocket</code> là hai lớp chính để lập trình TCP.</p>
+<h3 id="31-lớp-socket-dùng-cho-client--server">3.1. Lớp Socket (Dùng cho Client &amp; Server)<a hidden class="anchor" aria-hidden="true" href="#31-lớp-socket-dùng-cho-client--server">#</a></h3>
+<p>Dùng để thiết lập và quản lý kết nối, truyền nhận dữ liệu.</p>
+<p><strong>Khởi tạo:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// Kết nối đến host và port cụ thể</span>
+</span></span><span style="display:flex;"><span>Socket socket <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Socket(<span style="color:#e6db74">&#34;localhost&#34;</span>, 8080);
+</span></span></code></pre></div>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/java/">Java</a></li>
+      <li><a href="http://localhost:1313/tags/network-programming/">Network Programming</a></li>
+      <li><a href="http://localhost:1313/tags/tcp/">TCP</a></li>
+      <li><a href="http://localhost:1313/tags/sockets/">Sockets</a></li>
+      <li><a href="http://localhost:1313/tags/hutech/">HUTECH</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    <div class="music-widget" id="musicToggle">
+    <div class="music-visualizer">
+        <span></span><span></span><span></span><span></span>
+    </div>
+    <div class="music-text">MUSIC: <span id="musicStatus">OFF</span></div>
+</div>
+
+<audio id="bgAudio" loop>
+    <source src="/music.mp3" type="audio/mpeg">
+    <source src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const musicBtn = document.getElementById('musicToggle');
+        const bgAudio = document.getElementById('bgAudio');
+        const musicStatus = document.getElementById('musicStatus');
+        
+        
+        bgAudio.volume = 0.1;
+
+        
+        function toggleMusic() {
+            if (bgAudio.paused) {
+                bgAudio.play().then(() => {
+                    updateUI(true);
+                }).catch(e => console.log("Chặn Autoplay: Cần tương tác người dùng"));
+            } else {
+                bgAudio.pause();
+                updateUI(false);
+            }
+        }
+
+        
+        function updateUI(isPlaying) {
+            if (isPlaying) {
+                musicStatus.innerText = "ON";
+                musicBtn.classList.add('active');
+            } else {
+                musicStatus.innerText = "OFF";
+                musicBtn.classList.remove('active');
+            }
+        }
+
+        
+        musicBtn.addEventListener('click', toggleMusic);
+
+        
+        const currentPath = window.location.pathname;
+        
+        
+        if (currentPath.includes("ve-toi") || currentPath.includes("about")) {
+            console.log("Đang ở trang Về Tôi -> Kích hoạt nhạc");
+            
+            
+            var promise = bgAudio.play();
+            
+            if (promise !== undefined) {
+                promise.then(_ => {
+                    
+                    updateUI(true);
+                }).catch(error => {
+                    
+                    console.log("Autoplay bị chặn, chờ người dùng bấm.");
+                    
+                    document.body.addEventListener('click', function() {
+                        if(bgAudio.paused) toggleMusic();
+                    }, { once: true });
+                });
+            }
+        }
+        
+        
+        
+    });
+</script></body>
+
+</html>

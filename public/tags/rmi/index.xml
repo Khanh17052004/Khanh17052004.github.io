@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>RMI on Nguyen Truong Minh Khanh - Network Admin</title>
+    <link>http://localhost:1313/tags/rmi/</link>
+    <description>Recent content in RMI on Nguyen Truong Minh Khanh - Network Admin</description>
+    <generator>Hugo -- 0.153.2</generator>
+    <language>vi</language>
+    <lastBuildDate>Mon, 22 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/rmi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bài 8: Multicast UDP và Java RMI</title>
+      <link>http://localhost:1313/learnings/bai-8/</link>
+      <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learnings/bai-8/</guid>
+      <description>Giải thích Multicast UDP (gửi 1-n) và Java RMI (gọi phương thức từ xa) – nền tảng cho ứng dụng nhóm và hệ phân tán.</description>
+    </item>
+  </channel>
+</rss>

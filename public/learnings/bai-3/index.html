@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="dark">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Lập Trình Mạng - Buổi 3: Quản Lý Luồng Nhập Xuất (I/O Streams) | Nguyen Truong Minh Khanh - Network Admin</title>
+<meta name="keywords" content="Network Programming, HUTECH, Java, IO Stream, Serialization">
+<meta name="description" content="Tìm hiểu về cơ chế nhập xuất dữ liệu trong Java (I/O Streams), phân biệt luồng Byte và luồng Ký tự, cùng kỹ thuật Serialization.">
+<meta name="author" content="Trung Nguyen Quang">
+<link rel="canonical" href="http://localhost:1313/learnings/bai-3/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.85574fee1c1228f74465859f2707f07bc5ad342b17397ad7dfb5242f76049225.css" integrity="sha256-hVdP7hwSKPdEZYWfJwfwe8WtNCsXOXrX37UkL3YEkiU=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/learnings/bai-3/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><script>
+    document.addEventListener("DOMContentLoaded", function() {
+        
+        if (!document.querySelector('.starfall-bg')) {
+            const starContainer = document.createElement('div');
+            starContainer.className = 'starfall-bg';
+            
+            
+            let starsHtml = '';
+            for (let i = 0; i < 20; i++) {
+                starsHtml += '<i></i>';
+            }
+            starContainer.innerHTML = starsHtml;
+            
+            
+            document.body.insertBefore(starContainer, document.body.firstChild);
+        }
+    });
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Nguyen Truong Minh Khanh - Network Admin (Alt + H)">Nguyen Truong Minh Khanh - Network Admin</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/do-an/" title="🚀 Đồ Án">
+                    <span>🚀 Đồ Án</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="👨‍💻 Về Tôi">
+                    <span>👨‍💻 Về Tôi</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/learnings/" title="Learnings">
+                    <span>Learnings</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/certificates/" title="📜 Chứng Chỉ">
+                    <span>📜 Chứng Chỉ</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/contact/" title="📧 Liên Hệ">
+                    <span>📧 Liên Hệ</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Lập Trình Mạng - Buổi 3: Quản Lý Luồng Nhập Xuất (I/O Streams)
+    </h1>
+    <div class="post-description">
+      Tìm hiểu về cơ chế nhập xuất dữ liệu trong Java (I/O Streams), phân biệt luồng Byte và luồng Ký tự, cùng kỹ thuật Serialization.
+    </div>
+    <div class="post-meta"><span title='2025-11-15 08:00:00 +0700 +07'>November 15, 2025</span>&nbsp;·&nbsp;<span>Trung Nguyen Quang</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="nội-dung-chính">Nội Dung Chính<a hidden class="anchor" aria-hidden="true" href="#nội-dung-chính">#</a></h2>
+<ol>
+<li>Tổng quan về Luồng (Streams)</li>
+<li>Phân loại: Luồng Byte vs Luồng Ký tự</li>
+<li>Các lớp I/O quan trọng</li>
+<li>Serialization (Tuần tự hóa đối tượng)</li>
+<li>Xử lý ngoại lệ &amp; Try-with-resources</li>
+</ol>
+<hr>
+<h2 id="1-tổng-quan-về-luồng-nhập-xuất-io-streams">1. Tổng Quan Về Luồng Nhập Xuất (I/O Streams)<a hidden class="anchor" aria-hidden="true" href="#1-tổng-quan-về-luồng-nhập-xuất-io-streams">#</a></h2>
+<h3 id="khái-niệm">Khái Niệm<a hidden class="anchor" aria-hidden="true" href="#khái-niệm">#</a></h3>
+<ul>
+<li><strong>Luồng (Stream):</strong> Là dòng dữ liệu được di chuyển từ nguồn đến đích.</li>
+<li><strong>Nguồn/Đích:</strong> Có thể là tập tin (file), thiết bị ngoại vi, socket mạng, hoặc bộ nhớ (mảng).</li>
+<li><strong>Cơ chế:</strong> Dữ liệu được đọc/ghi tuần tự.</li>
+</ul>
+<h3 id="tại-sao-cần-quản-lý-luồng">Tại sao cần quản lý luồng?<a hidden class="anchor" aria-hidden="true" href="#tại-sao-cần-quản-lý-luồng">#</a></h3>
+<p>Trong lập trình mạng, việc truyền nhận dữ liệu giữa Client và Server thực chất là thao tác trên các luồng nhập xuất (Input/Output Streams). Hiểu rõ I/O là nền tảng để xây dựng các ứng dụng mạng.</p>
+<hr>
+<h2 id="2-phân-loại-luồng-trong-java">2. Phân Loại Luồng Trong Java<a hidden class="anchor" aria-hidden="true" href="#2-phân-loại-luồng-trong-java">#</a></h2>
+<p>Java chia luồng thành 2 loại chính dựa trên đơn vị dữ liệu:</p>
+<h3 id="a-luồng-byte-byte-streams">A. Luồng Byte (Byte Streams)<a hidden class="anchor" aria-hidden="true" href="#a-luồng-byte-byte-streams">#</a></h3>
+<ul>
+<li><strong>Đơn vị xử lý:</strong> 8-bit bytes.</li>
+<li><strong>Dùng cho:</strong> Dữ liệu nhị phân (ảnh, video, file âm thanh, object serialization).</li>
+<li><strong>Lớp gốc (Abstract):</strong>
+<ul>
+<li><code>InputStream</code>: Dùng để đọc.</li>
+<li><code>OutputStream</code>: Dùng để ghi.</li>
+</ul>
+</li>
+</ul>
+<h3 id="b-luồng-ký-tự-character-streams">B. Luồng Ký Tự (Character Streams)<a hidden class="anchor" aria-hidden="true" href="#b-luồng-ký-tự-character-streams">#</a></h3>
+<ul>
+<li><strong>Đơn vị xử lý:</strong> 16-bit unicode characters.</li>
+<li><strong>Dùng cho:</strong> Dữ liệu văn bản (text files).</li>
+<li><strong>Lớp gốc (Abstract):</strong>
+<ul>
+<li><code>Reader</code>: Dùng để đọc.</li>
+<li><code>Writer</code>: Dùng để ghi.</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>Quy tắc:</strong></p>
+<ul>
+<li>Dữ liệu là văn bản -&gt; Dùng <strong>Luồng Ký tự</strong>.</li>
+<li>Dữ liệu nhị phân hoặc không rõ định dạng -&gt; Dùng <strong>Luồng Byte</strong>.</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="3-các-lớp-io-hiện-thực-quan-trọng">3. Các Lớp I/O Hiện Thực Quan Trọng<a hidden class="anchor" aria-hidden="true" href="#3-các-lớp-io-hiện-thực-quan-trọng">#</a></h2>
+<h3 id="luồng-byte-byte-streams">Luồng Byte (Byte Streams)<a hidden class="anchor" aria-hidden="true" href="#luồng-byte-byte-streams">#</a></h3>
+<ul>
+<li><strong>File:</strong> <code>FileInputStream</code>, <code>FileOutputStream</code> (Đọc/ghi file).</li>
+<li><strong>Bộ nhớ:</strong> <code>ByteArrayInputStream</code>, <code>ByteArrayOutputStream</code> (Đọc/ghi mảng byte).</li>
+<li><strong>Lọc dữ liệu (Filter):</strong> <code>DataInputStream</code>, <code>DataOutputStream</code> (Đọc/ghi các kiểu dữ liệu nguyên thủy như <code>int</code>, <code>float</code>, <code>boolean</code>&hellip;).</li>
+</ul>
+<h3 id="luồng-ký-tự-character-streams">Luồng Ký Tự (Character Streams)<a hidden class="anchor" aria-hidden="true" href="#luồng-ký-tự-character-streams">#</a></h3>
+<ul>
+<li><strong>File:</strong> <code>FileReader</code>, <code>FileWriter</code> (Đọc/ghi file văn bản).</li>
+<li><strong>Bộ nhớ:</strong> <code>CharArrayReader</code>, <code>CharArrayWriter</code>, <code>StringReader</code>, <code>StringWriter</code>.</li>
+<li><strong>Bộ đệm (Buffer):</strong> <code>BufferedReader</code>, <code>BufferedWriter</code> (Tăng hiệu năng đọc ghi nhờ vùng đệm).</li>
+</ul>
+<h3 id="chuyển-đổi-bridge-streams">Chuyển Đổi (Bridge Streams)<a hidden class="anchor" aria-hidden="true" href="#chuyển-đổi-bridge-streams">#</a></h3>
+<ul>
+<li><code>InputStreamReader</code> và <code>OutputStreamWriter</code>: Cầu nối chuyển đổi từ luồng Byte sang luồng Ký tự và ngược lại.</li>
+</ul>
+<hr>
+<h2 id="4-serialization-tuần-tự-hoá-đối-tượng">4. Serialization (Tuần tự hoá đối tượng)<a hidden class="anchor" aria-hidden="true" href="#4-serialization-tuần-tự-hoá-đối-tượng">#</a></h2>
+<h3 id="khái-niệm-1">Khái niệm<a hidden class="anchor" aria-hidden="true" href="#khái-niệm-1">#</a></h3>
+<ul>
+<li><strong>Serialization:</strong> Quá trình chuyển đổi trạng thái của một đối tượng (Object) thành chuỗi byte để có thể lưu vào file hoặc truyền qua mạng.</li>
+<li><strong>Deserialization:</strong> Quá trình ngược lại, khôi phục đối tượng từ chuỗi byte.</li>
+</ul>
+<h3 id="ứng-dụng">Ứng dụng<a hidden class="anchor" aria-hidden="true" href="#ứng-dụng">#</a></h3>
+<ul>
+<li>Lưu trạng thái chương trình (Save game, session).</li>
+<li>Truyền đối tượng giữa các máy tính trong mạng (RMI, Socket).</li>
+</ul>
+<h3 id="cách-dùng">Cách dùng<a hidden class="anchor" aria-hidden="true" href="#cách-dùng">#</a></h3>
+<ul>
+<li>Đối tượng cần Serialize phải implement interface <code>java.io.Serializable</code>.</li>
+<li>Sử dụng <code>ObjectOutputStream</code> để ghi và <code>ObjectInputStream</code> để đọc.</li>
+</ul>
+<hr>
+<h2 id="5-kỹ-thuật-lập-trình--best-practices">5. Kỹ Thuật Lập Trình &amp; Best Practices<a hidden class="anchor" aria-hidden="true" href="#5-kỹ-thuật-lập-trình--best-practices">#</a></h2>
+<h3 id="try-with-resources-twr">Try-with-Resources (TWR)<a hidden class="anchor" aria-hidden="true" href="#try-with-resources-twr">#</a></h3>
+<p>Thay vì phải đóng luồng thủ công bằng <code>close()</code> trong khối <code>finally</code>, Java 7 giới thiệu TWR giúp code gọn gàng và an toàn hơn:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// Ví dụ đọc file dùng TWR</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">try</span> (FileInputStream fis <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> FileInputStream(<span style="color:#e6db74">&#34;input.txt&#34;</span>)) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> content;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> ((content <span style="color:#f92672">=</span> fis.<span style="color:#a6e22e">read</span>()) <span style="color:#f92672">!=</span> <span style="color:#f92672">-</span>1) {
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">print</span>((<span style="color:#66d9ef">char</span>) content);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>} <span style="color:#66d9ef">catch</span> (IOException e) {
+</span></span><span style="display:flex;"><span>    e.<span style="color:#a6e22e">printStackTrace</span>();
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Stream tự động được đóng sau khi kết thúc khối try</span>
+</span></span></code></pre></div>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/network-programming/">Network Programming</a></li>
+      <li><a href="http://localhost:1313/tags/hutech/">HUTECH</a></li>
+      <li><a href="http://localhost:1313/tags/java/">Java</a></li>
+      <li><a href="http://localhost:1313/tags/io-stream/">IO Stream</a></li>
+      <li><a href="http://localhost:1313/tags/serialization/">Serialization</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    <div class="music-widget" id="musicToggle">
+    <div class="music-visualizer">
+        <span></span><span></span><span></span><span></span>
+    </div>
+    <div class="music-text">MUSIC: <span id="musicStatus">OFF</span></div>
+</div>
+
+<audio id="bgAudio" loop>
+    <source src="/music.mp3" type="audio/mpeg">
+    <source src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const musicBtn = document.getElementById('musicToggle');
+        const bgAudio = document.getElementById('bgAudio');
+        const musicStatus = document.getElementById('musicStatus');
+        
+        
+        bgAudio.volume = 0.1;
+
+        
+        function toggleMusic() {
+            if (bgAudio.paused) {
+                bgAudio.play().then(() => {
+                    updateUI(true);
+                }).catch(e => console.log("Chặn Autoplay: Cần tương tác người dùng"));
+            } else {
+                bgAudio.pause();
+                updateUI(false);
+            }
+        }
+
+        
+        function updateUI(isPlaying) {
+            if (isPlaying) {
+                musicStatus.innerText = "ON";
+                musicBtn.classList.add('active');
+            } else {
+                musicStatus.innerText = "OFF";
+                musicBtn.classList.remove('active');
+            }
+        }
+
+        
+        musicBtn.addEventListener('click', toggleMusic);
+
+        
+        const currentPath = window.location.pathname;
+        
+        
+        if (currentPath.includes("ve-toi") || currentPath.includes("about")) {
+            console.log("Đang ở trang Về Tôi -> Kích hoạt nhạc");
+            
+            
+            var promise = bgAudio.play();
+            
+            if (promise !== undefined) {
+                promise.then(_ => {
+                    
+                    updateUI(true);
+                }).catch(error => {
+                    
+                    console.log("Autoplay bị chặn, chờ người dùng bấm.");
+                    
+                    document.body.addEventListener('click', function() {
+                        if(bgAudio.paused) toggleMusic();
+                    }, { once: true });
+                });
+            }
+        }
+        
+        
+        
+    });
+</script></body>
+
+</html>

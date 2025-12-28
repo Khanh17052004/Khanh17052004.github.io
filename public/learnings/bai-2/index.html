@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="dark">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Lập Trình Mạng - Buổi 2: Kiến Thức Nền Tảng | Nguyen Truong Minh Khanh - Network Admin</title>
+<meta name="keywords" content="Network Programming, HUTECH, Java, TCP/IP, Internet">
+<meta name="description" content="Tổng hợp kiến thức nền tảng về Mạng máy tính, các giao thức mạng phổ biến và lý do lựa chọn Java cho lập trình mạng.">
+<meta name="author" content="Trung Nguyen Quang">
+<link rel="canonical" href="http://localhost:1313/learnings/bai-2/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.85574fee1c1228f74465859f2707f07bc5ad342b17397ad7dfb5242f76049225.css" integrity="sha256-hVdP7hwSKPdEZYWfJwfwe8WtNCsXOXrX37UkL3YEkiU=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/learnings/bai-2/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><script>
+    document.addEventListener("DOMContentLoaded", function() {
+        
+        if (!document.querySelector('.starfall-bg')) {
+            const starContainer = document.createElement('div');
+            starContainer.className = 'starfall-bg';
+            
+            
+            let starsHtml = '';
+            for (let i = 0; i < 20; i++) {
+                starsHtml += '<i></i>';
+            }
+            starContainer.innerHTML = starsHtml;
+            
+            
+            document.body.insertBefore(starContainer, document.body.firstChild);
+        }
+    });
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Nguyen Truong Minh Khanh - Network Admin (Alt + H)">Nguyen Truong Minh Khanh - Network Admin</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/do-an/" title="🚀 Đồ Án">
+                    <span>🚀 Đồ Án</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="👨‍💻 Về Tôi">
+                    <span>👨‍💻 Về Tôi</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/learnings/" title="Learnings">
+                    <span>Learnings</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/certificates/" title="📜 Chứng Chỉ">
+                    <span>📜 Chứng Chỉ</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/contact/" title="📧 Liên Hệ">
+                    <span>📧 Liên Hệ</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Lập Trình Mạng - Buổi 2: Kiến Thức Nền Tảng
+    </h1>
+    <div class="post-description">
+      Tổng hợp kiến thức nền tảng về Mạng máy tính, các giao thức mạng phổ biến và lý do lựa chọn Java cho lập trình mạng.
+    </div>
+    <div class="post-meta"><span title='2025-11-08 08:00:00 +0700 +07'>November 8, 2025</span>&nbsp;·&nbsp;<span>Trung Nguyen Quang</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="nội-dung-chính">Nội Dung Chính<a hidden class="anchor" aria-hidden="true" href="#nội-dung-chính">#</a></h2>
+<ol>
+<li>Mạng Máy Tính &amp; Internet</li>
+<li>Các Ứng Dụng Mạng</li>
+<li>Ngôn Ngữ Java cho Lập Trình Mạng</li>
+</ol>
+<hr>
+<h2 id="1-mạng-máy-tính--internet">1. Mạng Máy Tính &amp; Internet<a hidden class="anchor" aria-hidden="true" href="#1-mạng-máy-tính--internet">#</a></h2>
+<h3 id="quy-mô-internet">Quy Mô Internet<a hidden class="anchor" aria-hidden="true" href="#quy-mô-internet">#</a></h3>
+<ul>
+<li><strong>End-Devices:</strong> Khoảng 15 tỷ thiết bị (số liệu 2022).</li>
+<li><strong>Core Network:</strong> Tốc độ đường truyền cực cao, ví dụ kỷ lục 44.8 Tbps (2020) giữa Tokyo – Osaka.</li>
+<li><strong>Access Network:</strong> Đa dạng công nghệ với độ trễ (latency) khác nhau, ảnh hưởng đến các ứng dụng thời gian thực như xe tự lái, game online, phẫu thuật từ xa.</li>
+</ul>
+<h3 id="chuyển-mạch-gói-packet-switching">Chuyển Mạch Gói (Packet Switching)<a hidden class="anchor" aria-hidden="true" href="#chuyển-mạch-gói-packet-switching">#</a></h3>
+<p>Đây là công nghệ nền tảng của Internet (từ năm 1961), thay thế cho chuyển mạch kênh truyền thống.</p>
+<ul>
+<li><strong>Ưu điểm:</strong>
+<ul>
+<li><strong>Hiệu quả:</strong> Chia sẻ đường truyền tốt hơn.</li>
+<li><strong>Mở rộng:</strong> Dễ dàng thêm thiết bị mới.</li>
+<li><strong>Linh hoạt:</strong> Dữ liệu đi theo nhiều đường, chịu lỗi tốt.</li>
+</ul>
+</li>
+<li><strong>Thách thức:</strong> Mất gói tin (packet loss), độ trễ biến đổi (jitter), khó đảm bảo chất lượng dịch vụ (QoS).</li>
+</ul>
+<h3 id="bộ-giao-thức-tcpip--mô-hình-osi">Bộ Giao Thức TCP/IP &amp; Mô Hình OSI<a hidden class="anchor" aria-hidden="true" href="#bộ-giao-thức-tcpip--mô-hình-osi">#</a></h3>
+<p>Mô hình tham chiếu cho việc truyền thông mạng:</p>
+<ol>
+<li><strong>Application (Ứng dụng):</strong> Nơi các ứng dụng mạng hoạt động (HTTP, SMTP&hellip;).</li>
+<li><strong>Transport (Giao vận):</strong> Quản lý truyền dữ liệu giữa các tiến trình (TCP, UDP).</li>
+<li><strong>Internet (Liên mạng):</strong> Định tuyến và đánh địa chỉ (IP).</li>
+<li><strong>Network Interface (Giao diện mạng):</strong> Truyền dữ liệu vật lý (Ethernet, Wifi).</li>
+</ol>
+<h3 id="giao-thức-giao-vận-tcp-vs-udp">Giao Thức Giao Vận: TCP vs UDP<a hidden class="anchor" aria-hidden="true" href="#giao-thức-giao-vận-tcp-vs-udp">#</a></h3>
+<ul>
+<li><strong>TCP (Transmission Control Protocol):</strong> Hướng kết nối, đảm bảo tin cậy, có cơ chế bắt tay 3 bước (3-way handshake), kiểm soát luồng và tắc nghẽn. Dùng cho Web, Email, File transfer.</li>
+<li><strong>UDP (User Datagram Protocol):</strong> Không kết nối, nhanh nhưng không đảm bảo tin cậy. Dùng cho Streaming, DNS, VoIP.</li>
+</ul>
+<hr>
+<h2 id="2-các-ứng-dụng-mạng-phổ-biến">2. Các Ứng Dụng Mạng Phổ Biến<a hidden class="anchor" aria-hidden="true" href="#2-các-ứng-dụng-mạng-phổ-biến">#</a></h2>
+<h3 id="web--http">Web &amp; HTTP<a hidden class="anchor" aria-hidden="true" href="#web--http">#</a></h3>
+<ul>
+<li><strong>HTTP (HyperText Transfer Protocol):</strong> Giao thức trao đổi siêu văn bản.</li>
+<li>Các phiên bản phát triển từ HTTP/1.0, 1.1 (Persistent connection) đến HTTP/2, HTTP/3.</li>
+<li>Các khái niệm liên quan: Cookies, Proxy Server (Web caching), CDN.</li>
+</ul>
+<h3 id="hệ-thống-tên-miền-dns">Hệ Thống Tên Miền (DNS)<a hidden class="anchor" aria-hidden="true" href="#hệ-thống-tên-miền-dns">#</a></h3>
+<ul>
+<li>Dịch vụ phân giải tên miền (ví dụ: <a href="https://www.google.com">www.google.com</a>) sang địa chỉ IP để máy tính hiểu được.</li>
+<li>Hoạt động theo cấu trúc cây (DNS Tree).</li>
+</ul>
+<h3 id="email">Email<a hidden class="anchor" aria-hidden="true" href="#email">#</a></h3>
+<p>Gồm 3 thành phần chính:</p>
+<ul>
+<li><strong>User Agents:</strong> Trình đọc mail (Outlook, Webmail).</li>
+<li><strong>Mail Servers:</strong> Máy chủ lưu trữ và chuyển tiếp thư.</li>
+<li><strong>Protocols:</strong> SMTP (gửi thư), POP3/IMAP (nhận thư).</li>
+</ul>
+<h3 id="ftp-file-transfer-protocol">FTP (File Transfer Protocol)<a hidden class="anchor" aria-hidden="true" href="#ftp-file-transfer-protocol">#</a></h3>
+<ul>
+<li>Giao thức truyền tập tin tin cậy.</li>
+<li>Sử dụng 2 kết nối song song: Một cho điều khiển (port 21) và một cho dữ liệu (port 20).</li>
+</ul>
+<hr>
+<h2 id="3-ngôn-ngữ-java">3. Ngôn Ngữ Java<a hidden class="anchor" aria-hidden="true" href="#3-ngôn-ngữ-java">#</a></h2>
+<h3 id="tại-sao-chọn-java-cho-lập-trình-mạng">Tại Sao Chọn Java Cho Lập Trình Mạng?<a hidden class="anchor" aria-hidden="true" href="#tại-sao-chọn-java-cho-lập-trình-mạng">#</a></h3>
+<ul>
+<li><strong>Độc lập nền tảng (Platform Independence):</strong> &ldquo;Write Once, Run Anywhere&rdquo; nhờ JVM.</li>
+<li><strong>Thư viện phong phú:</strong> Hỗ trợ mạnh mẽ cho Networking, I/O, Multithreading.</li>
+<li><strong>Bảo mật:</strong> Tích hợp sẵn SSL/TLS, xác thực.</li>
+<li><strong>Đa luồng (Multithreading):</strong> Tối ưu hóa hiệu năng cho các ứng dụng mạng phục vụ nhiều kết nối đồng thời.</li>
+</ul>
+<h3 id="các-nguyên-lý-oop-trong-java">Các Nguyên Lý OOP Trong Java<a hidden class="anchor" aria-hidden="true" href="#các-nguyên-lý-oop-trong-java">#</a></h3>
+<ul>
+<li><strong>Tính đóng gói (Encapsulation):</strong> Bảo vệ dữ liệu, tổ chức code gọn gàng.</li>
+<li><strong>Tính kế thừa (Inheritance):</strong> Tái sử dụng mã nguồn.</li>
+<li><strong>Tính đa hình (Polymorphism):</strong> Linh hoạt trong xử lý đối tượng.</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>Tóm tắt:</strong> Buổi học cung cấp bức tranh toàn cảnh về hạ tầng mạng, cách các ứng dụng giao tiếp với nhau và công cụ (Java) chúng ta sẽ sử dụng để xây dựng chúng.</p>
+</blockquote>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/network-programming/">Network Programming</a></li>
+      <li><a href="http://localhost:1313/tags/hutech/">HUTECH</a></li>
+      <li><a href="http://localhost:1313/tags/java/">Java</a></li>
+      <li><a href="http://localhost:1313/tags/tcp/ip/">TCP/IP</a></li>
+      <li><a href="http://localhost:1313/tags/internet/">Internet</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    <div class="music-widget" id="musicToggle">
+    <div class="music-visualizer">
+        <span></span><span></span><span></span><span></span>
+    </div>
+    <div class="music-text">MUSIC: <span id="musicStatus">OFF</span></div>
+</div>
+
+<audio id="bgAudio" loop>
+    <source src="/music.mp3" type="audio/mpeg">
+    <source src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const musicBtn = document.getElementById('musicToggle');
+        const bgAudio = document.getElementById('bgAudio');
+        const musicStatus = document.getElementById('musicStatus');
+        
+        
+        bgAudio.volume = 0.1;
+
+        
+        function toggleMusic() {
+            if (bgAudio.paused) {
+                bgAudio.play().then(() => {
+                    updateUI(true);
+                }).catch(e => console.log("Chặn Autoplay: Cần tương tác người dùng"));
+            } else {
+                bgAudio.pause();
+                updateUI(false);
+            }
+        }
+
+        
+        function updateUI(isPlaying) {
+            if (isPlaying) {
+                musicStatus.innerText = "ON";
+                musicBtn.classList.add('active');
+            } else {
+                musicStatus.innerText = "OFF";
+                musicBtn.classList.remove('active');
+            }
+        }
+
+        
+        musicBtn.addEventListener('click', toggleMusic);
+
+        
+        const currentPath = window.location.pathname;
+        
+        
+        if (currentPath.includes("ve-toi") || currentPath.includes("about")) {
+            console.log("Đang ở trang Về Tôi -> Kích hoạt nhạc");
+            
+            
+            var promise = bgAudio.play();
+            
+            if (promise !== undefined) {
+                promise.then(_ => {
+                    
+                    updateUI(true);
+                }).catch(error => {
+                    
+                    console.log("Autoplay bị chặn, chờ người dùng bấm.");
+                    
+                    document.body.addEventListener('click', function() {
+                        if(bgAudio.paused) toggleMusic();
+                    }, { once: true });
+                });
+            }
+        }
+        
+        
+        
+    });
+</script></body>
+
+</html>

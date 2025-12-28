@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Do-Ans on Nguyen Truong Minh Khanh - Network Admin</title>
-    <link>http://localhost:57617/do-an/</link>
+    <link>http://localhost:1313/do-an/</link>
     <description>Recent content in Do-Ans on Nguyen Truong Minh Khanh - Network Admin</description>
     <generator>Hugo -- 0.153.2</generator>
     <language>vi</language>
-    <atom:link href="http://localhost:57617/do-an/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/do-an/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Triển khai Hạ tầng Mạng Doanh nghiệp trên AWS</title>
-      <link>http://localhost:57617/do-an/aws-infrastructure/</link>
+      <link>http://localhost:1313/do-an/aws-infrastructure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57617/do-an/aws-infrastructure/</guid>
+      <guid>http://localhost:1313/do-an/aws-infrastructure/</guid>
       <description>Thiết kế hệ thống High Availability và Auto Scaling trên nền tảng Cloud.</description>
     </item>
     <item>
       <title>Xây dựng hệ thống VPN Client-to-Site với OpenVPN trên AWS</title>
-      <link>http://localhost:57617/do-an/vpn-solution/</link>
+      <link>http://localhost:1313/do-an/vpn-solution/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:57617/do-an/vpn-solution/</guid>
+      <guid>http://localhost:1313/do-an/vpn-solution/</guid>
       <description>Giải pháp truy cập an toàn vào Private Subnet thông qua Internet Gateway và OpenVPN.</description>
     </item>
   </channel>

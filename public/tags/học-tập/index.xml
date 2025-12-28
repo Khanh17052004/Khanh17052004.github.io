@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Học Tập on Nguyen Truong Minh Khanh - Network Admin</title>
+    <link>http://localhost:1313/tags/h%E1%BB%8Dc-t%E1%BA%ADp/</link>
+    <description>Recent content in Học Tập on Nguyen Truong Minh Khanh - Network Admin</description>
+    <generator>Hugo -- 0.153.2</generator>
+    <language>vi</language>
+    <lastBuildDate>Sat, 01 Nov 2025 08:00:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/h%E1%BB%8Dc-t%E1%BA%ADp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lập Trình Mạng Máy Tính - Tổng Quan Khoá Học</title>
+      <link>http://localhost:1313/learnings/bai-1/</link>
+      <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/learnings/bai-1/</guid>
+      <description>Tổng quan về môn học Lập trình Mạng máy tính: Mục tiêu, nội dung, phương pháp học tập và các tài nguyên cần thiết.</description>
+    </item>
+  </channel>
+</rss>

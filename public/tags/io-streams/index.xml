@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>IO Streams on Nguyen Truong Minh Khanh - Network Admin</title>
+    <link>http://localhost:1313/tags/io-streams/</link>
+    <description>Recent content in IO Streams on Nguyen Truong Minh Khanh - Network Admin</description>
+    <generator>Hugo -- 0.153.2</generator>
+    <language>vi</language>
+    <lastBuildDate>Wed, 17 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/io-streams/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bài 3: Quản lý luồng nhập xuất trong Java</title>
+      <link>http://localhost:1313/learnings/bai-3/</link>
+      <pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learnings/bai-3/</guid>
+      <description>Tổng quan về Input/Output Streams trong Java – nền tảng cho xử lý file, console và lập trình mạng.</description>
+    </item>
+  </channel>
+</rss>

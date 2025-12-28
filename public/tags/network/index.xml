@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Network on Nguyen Truong Minh Khanh - Network Admin</title>
+    <link>http://localhost:1313/tags/network/</link>
+    <description>Recent content in Network on Nguyen Truong Minh Khanh - Network Admin</description>
+    <generator>Hugo -- 0.153.2</generator>
+    <language>vi</language>
+    <lastBuildDate>Tue, 16 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bài 1: Tổng quan khoá học</title>
+      <link>http://localhost:1313/learnings/bai-1/</link>
+      <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learnings/bai-1/</guid>
+      <description>GIỚI THIỆU HỌC PHẦN.</description>
+    </item>
+    <item>
+      <title>Bài 2: Kiến thức nền tảng</title>
+      <link>http://localhost:1313/learnings/bai-2/</link>
+      <pubDate>Tue, 16 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learnings/bai-2/</guid>
+      <description>MẠNG MÁY TÍNH &amp;amp; INTERNET.</description>
+    </item>
+  </channel>
+</rss>

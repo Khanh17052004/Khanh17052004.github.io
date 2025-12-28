@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Concurrency on Nguyen Truong Minh Khanh - Network Admin</title>
+    <link>http://localhost:1313/categories/concurrency/</link>
+    <description>Recent content in Concurrency on Nguyen Truong Minh Khanh - Network Admin</description>
+    <generator>Hugo -- 0.153.2</generator>
+    <language>vi</language>
+    <lastBuildDate>Sat, 27 Dec 2025 16:50:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/concurrency/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lập trình Đa tuyến và Xử lý Đồng thời trong Java</title>
+      <link>http://localhost:1313/learnings/bai-7/</link>
+      <pubDate>Sat, 27 Dec 2025 16:50:00 +0700</pubDate>
+      <guid>http://localhost:1313/learnings/bai-7/</guid>
+      <description>&lt;p&gt;Trong bài viết này, chúng ta sẽ tìm hiểu về &lt;strong&gt;Lập trình Đa tuyến (Multi-threading)&lt;/strong&gt; và &lt;strong&gt;Xử lý đồng thời (Concurrency)&lt;/strong&gt;. [cite_start]Đây là nội dung thuộc &lt;strong&gt;Buổi 7&lt;/strong&gt; của khóa học Lập trình mạng máy tính, tập trung vào việc xây dựng các ứng dụng có khả năng xử lý nhiều tác vụ cùng lúc như Chat Server hay trình tải file đa luồng[cite: 1].&lt;/p&gt;
+&lt;h2 id=&#34;1-bài-tập-ví-dụ-thực-tế&#34;&gt;1. Bài tập ví dụ thực tế&lt;/h2&gt;
+&lt;h3 id=&#34;ví-dụ-1-ứng-dụng-chat-đa-tuyến-multi-threading-chat&#34;&gt;Ví dụ 1: Ứng dụng Chat đa tuyến (Multi-threading Chat)&lt;/h3&gt;
+&lt;p&gt;[cite_start]Mục tiêu là xây dựng hệ thống chat giữa nhiều client và một server[cite: 1]:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

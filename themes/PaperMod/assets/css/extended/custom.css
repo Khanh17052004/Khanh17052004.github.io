@@ -550,3 +550,80 @@ body {
     .contact-header { font-size: 3rem; }
     .btn-send { width: 100%; text-align: center; } /* Nút full chiều ngang trên mobile */
 }
+/* --- GIAO DIỆN TRANG LEARNINGS (GRID SYSTEM) --- */
+
+/* Chỉ áp dụng cho trang list của learnings */
+.list .main {
+    max-width: 1400px; /* Mở rộng chiều ngang */
+}
+
+/* Biến container bài viết thành Grid 2 cột */
+.list .main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 30px;
+}
+
+/* Header trang (Tiêu đề Learnings) trải dài */
+.list .page-header {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.list .page-header h1 {
+    font-size: 3rem; text-transform: uppercase; letter-spacing: 2px;
+    text-shadow: 0 0 20px var(--neon-blue);
+}
+
+/* Style cho từng thẻ bài viết (Card) */
+.post-entry {
+    background: rgba(10, 15, 30, 0.8);
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 30px;
+    transition: all 0.3s ease;
+    margin-bottom: 0; /* Ghi đè margin mặc định */
+    display: flex; flex-direction: column; justify-content: space-between;
+    min-height: 250px;
+}
+
+.post-entry:hover {
+    transform: translateY(-5px);
+    border-color: var(--neon-blue);
+    box-shadow: 0 0 30px rgba(0, 240, 255, 0.15);
+    background: rgba(15, 23, 42, 0.95);
+}
+
+/* Tiêu đề bài viết */
+.entry-header h2 {
+    font-size: 1.5rem; color: #fff; margin-bottom: 15px; font-weight: bold;
+}
+
+/* Tóm tắt */
+.entry-content {
+    color: #94a3b8; font-size: 1rem; line-height: 1.6; flex-grow: 1;
+}
+
+/* Footer của card (Ngày tháng & Tags) */
+.entry-footer {
+    margin-top: 20px;
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 0.9rem; color: #666;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 15px;
+}
+
+/* Tags màu mè */
+.entry-footer a { 
+    pointer-events: none; /* Tag chỉ để trang trí */
+    text-decoration: none;
+}
+
+/* Màu tag ngẫu nhiên (giả lập) */
+.post-entry:nth-child(odd) .entry-footer { color: var(--neon-pink); }
+.post-entry:nth-child(even) .entry-footer { color: var(--neon-blue); }
+
+/* Responsive mobile */
+@media (max-width: 900px) {
+    .list .main { grid-template-columns: 1fr; }
+}

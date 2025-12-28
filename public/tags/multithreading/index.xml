@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Multithreading on Nguyen Truong Minh Khanh - Network Admin</title>
+    <link>http://localhost:1313/tags/multithreading/</link>
+    <description>Recent content in Multithreading on Nguyen Truong Minh Khanh - Network Admin</description>
+    <generator>Hugo -- 0.153.2</generator>
+    <language>vi</language>
+    <lastBuildDate>Sun, 21 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/multithreading/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bài 7: Lập trình đa tuyến và xử lý đồng thời</title>
+      <link>http://localhost:1313/learnings/bai-7/</link>
+      <pubDate>Sun, 21 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/learnings/bai-7/</guid>
+      <description>Giải thích lập trình đa tuyến và xử lý đồng thời trong Java – nền tảng cho các ứng dụng mạng nhiều client.</description>
+    </item>
+  </channel>
+</rss>
