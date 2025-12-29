@@ -6,8 +6,22 @@
     <description>Recent content in Khoá Học on Nguyen Truong Minh Khanh - Network Admin</description>
     <generator>Hugo -- 0.153.2</generator>
     <language>vi</language>
-    <lastBuildDate>Sat, 01 Nov 2025 08:00:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 15 Nov 2025 08:00:00 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/kho%C3%A1-h%E1%BB%8Dc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lập Trình Mạng - Buổi 3: Quản Lý Luồng Nhập Xuất (I/O Streams)</title>
+      <link>http://localhost:1313/learnings/bai-3/</link>
+      <pubDate>Sat, 15 Nov 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/learnings/bai-3/</guid>
+      <description>Tìm hiểu về cơ chế nhập xuất dữ liệu trong Java (I/O Streams), phân biệt luồng Byte và luồng Ký tự, cùng kỹ thuật Serialization.</description>
+    </item>
+    <item>
+      <title>Lập Trình Mạng - Buổi 2: Kiến Thức Nền Tảng</title>
+      <link>http://localhost:1313/learnings/bai-2/</link>
+      <pubDate>Sat, 08 Nov 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/learnings/bai-2/</guid>
+      <description>Tổng hợp kiến thức nền tảng về Mạng máy tính, các giao thức mạng phổ biến và lý do lựa chọn Java cho lập trình mạng.</description>
+    </item>
     <item>
       <title>Lập Trình Mạng Máy Tính - Tổng Quan Khoá Học</title>
       <link>http://localhost:1313/learnings/bai-1/</link>

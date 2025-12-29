@@ -6,56 +6,56 @@
     <description>Recent content in Java on Nguyen Truong Minh Khanh - Network Admin</description>
     <generator>Hugo -- 0.153.2</generator>
     <language>vi</language>
-    <lastBuildDate>Mon, 22 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Nov 2025 08:00:00 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Bài 1: Tổng quan khoá học</title>
-      <link>http://localhost:1313/learnings/bai-1/</link>
-      <pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/learnings/bai-1/</guid>
-      <description>GIỚI THIỆU HỌC PHẦN.</description>
-    </item>
-    <item>
-      <title>Bài 3: Quản lý luồng nhập xuất trong Java</title>
+      <title>Lập Trình Mạng - Buổi 3: Quản Lý Luồng Nhập Xuất (I/O Streams)</title>
       <link>http://localhost:1313/learnings/bai-3/</link>
-      <pubDate>Wed, 17 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 15 Nov 2025 08:00:00 +0700</pubDate>
       <guid>http://localhost:1313/learnings/bai-3/</guid>
-      <description>Tổng quan về Input/Output Streams trong Java – nền tảng cho xử lý file, console và lập trình mạng.</description>
+      <description>Tìm hiểu về cơ chế nhập xuất dữ liệu trong Java (I/O Streams), phân biệt luồng Byte và luồng Ký tự, cùng kỹ thuật Serialization.</description>
     </item>
     <item>
-      <title>Bài 4: Quản lý địa chỉ kết nối mạng trong Java</title>
-      <link>http://localhost:1313/learnings/bai-4/</link>
-      <pubDate>Thu, 18 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/learnings/bai-4/</guid>
-      <description>Tìm hiểu cách Java quản lý địa chỉ mạng thông qua InetAddress, URL, URLConnection và DNS.</description>
+      <title>Lập Trình Mạng - Buổi 2: Kiến Thức Nền Tảng</title>
+      <link>http://localhost:1313/learnings/bai-2/</link>
+      <pubDate>Sat, 08 Nov 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/learnings/bai-2/</guid>
+      <description>Tổng hợp kiến thức nền tảng về Mạng máy tính, các giao thức mạng phổ biến và lý do lựa chọn Java cho lập trình mạng.</description>
     </item>
     <item>
-      <title>Bài 5: Lập trình Socket TCP trong Java</title>
-      <link>http://localhost:1313/learnings/bai-5/</link>
-      <pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/learnings/bai-5/</guid>
-      <description>Giải thích mô hình Client–Server và cách lập trình Socket TCP trong Java – nền tảng cho giao tiếp mạng tin cậy.</description>
-    </item>
-    <item>
-      <title>Bài 6: Lập trình Socket UDP trong Java</title>
+      <title>Lập trình Đa tuyến &amp; Xử lý đồng thời - Lập trình mạng (Buổi 7)</title>
       <link>http://localhost:1313/learnings/bai-6/</link>
-      <pubDate>Sat, 20 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
       <guid>http://localhost:1313/learnings/bai-6/</guid>
-      <description>Giải thích giao thức UDP và cách Java lập trình Socket UDP – nền tảng cho truyền dữ liệu nhanh, không kết nối.</description>
+      <description>Tổng hợp kiến thức về lập trình đa tuyến (Multithreading), vòng đời của Thread, các vấn đề đồng bộ hóa (Concurrency) và bài tập ứng dụng Chat đa người dùng.</description>
     </item>
     <item>
-      <title>Bài 7: Lập trình đa tuyến và xử lý đồng thời</title>
+      <title>Lập Trình Mạng Máy Tính - Tổng Quan Khoá Học</title>
+      <link>http://localhost:1313/learnings/bai-1/</link>
+      <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/learnings/bai-1/</guid>
+      <description>Tổng quan về môn học Lập trình Mạng máy tính: Mục tiêu, nội dung, phương pháp học tập và các tài nguyên cần thiết.</description>
+    </item>
+    <item>
+      <title>Lập trình Multicast UDP &amp; Java RMI - Lập trình mạng (Buổi 8)</title>
       <link>http://localhost:1313/learnings/bai-7/</link>
-      <pubDate>Sun, 21 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
       <guid>http://localhost:1313/learnings/bai-7/</guid>
-      <description>Giải thích lập trình đa tuyến và xử lý đồng thời trong Java – nền tảng cho các ứng dụng mạng nhiều client.</description>
+      <description>Hướng dẫn lập trình truyền thông nhóm (Multicast UDP) và gọi phương thức từ xa (Java RMI) với các bài tập thực hành Chat Room và Calculator.</description>
     </item>
     <item>
-      <title>Bài 8: Multicast UDP và Java RMI</title>
-      <link>http://localhost:1313/learnings/bai-8/</link>
-      <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/learnings/bai-8/</guid>
-      <description>Giải thích Multicast UDP (gửi 1-n) và Java RMI (gọi phương thức từ xa) – nền tảng cho ứng dụng nhóm và hệ phân tán.</description>
+      <title>Lập trình Sockets TCP - Lập trình mạng (Buổi 5)</title>
+      <link>http://localhost:1313/learnings/bai-5/</link>
+      <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/learnings/bai-5/</guid>
+      <description>Tổng hợp kiến thức về lập trình TCP Sockets trong Java, mô hình Client-Server và các bài tập thực hành.</description>
+    </item>
+    <item>
+      <title>Quản lý địa chỉ kết nối mạng - Lập trình mạng (Buổi 4)</title>
+      <link>http://localhost:1313/learnings/bai-4/</link>
+      <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/learnings/bai-4/</guid>
+      <description>Tổng hợp kiến thức về quản lý địa chỉ mạng, lập trình với lớp URL, InetAddress và bài tập thực hành Web Crawler.</description>
     </item>
   </channel>
 </rss>

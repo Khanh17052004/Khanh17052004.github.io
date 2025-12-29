@@ -6,14 +6,14 @@
     <description>Recent content in RMI on Nguyen Truong Minh Khanh - Network Admin</description>
     <generator>Hugo -- 0.153.2</generator>
     <language>vi</language>
-    <lastBuildDate>Mon, 22 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Nov 2025 08:00:00 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/rmi/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Bài 8: Multicast UDP và Java RMI</title>
-      <link>http://localhost:1313/learnings/bai-8/</link>
-      <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/learnings/bai-8/</guid>
-      <description>Giải thích Multicast UDP (gửi 1-n) và Java RMI (gọi phương thức từ xa) – nền tảng cho ứng dụng nhóm và hệ phân tán.</description>
+      <title>Lập trình Multicast UDP &amp; Java RMI - Lập trình mạng (Buổi 8)</title>
+      <link>http://localhost:1313/learnings/bai-7/</link>
+      <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/learnings/bai-7/</guid>
+      <description>Hướng dẫn lập trình truyền thông nhóm (Multicast UDP) và gọi phương thức từ xa (Java RMI) với các bài tập thực hành Chat Room và Calculator.</description>
     </item>
   </channel>
 </rss>

@@ -6,14 +6,14 @@
     <description>Recent content in Concurrency on Nguyen Truong Minh Khanh - Network Admin</description>
     <generator>Hugo -- 0.153.2</generator>
     <language>vi</language>
-    <lastBuildDate>Sun, 21 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Nov 2025 08:00:00 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/concurrency/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Bài 7: Lập trình Đa tuyến &amp; Xử lý đồng thời</title>
+      <title>Lập trình Đa tuyến &amp; Xử lý đồng thời - Lập trình mạng (Buổi 7)</title>
       <link>http://localhost:1313/learnings/bai-6/</link>
-      <pubDate>Sun, 21 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
       <guid>http://localhost:1313/learnings/bai-6/</guid>
-      <description>Kỹ thuật Multithreading để Server phục vụ nhiều Client cùng lúc.</description>
+      <description>Tổng hợp kiến thức về lập trình đa tuyến (Multithreading), vòng đời của Thread, các vấn đề đồng bộ hóa (Concurrency) và bài tập ứng dụng Chat đa người dùng.</description>
     </item>
   </channel>
 </rss>

@@ -6,14 +6,21 @@
     <description>Recent content in TCP on Nguyen Truong Minh Khanh - Network Admin</description>
     <generator>Hugo -- 0.153.2</generator>
     <language>vi</language>
-    <lastBuildDate>Fri, 19 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Nov 2025 08:00:00 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/tcp/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Bài 5: Lập trình Socket TCP trong Java</title>
+      <title>Lập Trình Mạng - Buổi 2: Kiến Thức Nền Tảng</title>
+      <link>http://localhost:1313/learnings/bai-2/</link>
+      <pubDate>Sat, 08 Nov 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/learnings/bai-2/</guid>
+      <description>Tổng hợp kiến thức nền tảng về Mạng máy tính, các giao thức mạng phổ biến và lý do lựa chọn Java cho lập trình mạng.</description>
+    </item>
+    <item>
+      <title>Lập trình Sockets TCP - Lập trình mạng (Buổi 5)</title>
       <link>http://localhost:1313/learnings/bai-5/</link>
-      <pubDate>Fri, 19 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
       <guid>http://localhost:1313/learnings/bai-5/</guid>
-      <description>Giải thích mô hình Client–Server và cách lập trình Socket TCP trong Java – nền tảng cho giao tiếp mạng tin cậy.</description>
+      <description>Tổng hợp kiến thức về lập trình TCP Sockets trong Java, mô hình Client-Server và các bài tập thực hành.</description>
     </item>
   </channel>
 </rss>

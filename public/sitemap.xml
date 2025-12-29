@@ -2,72 +2,111 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/learnings/bai-1/</loc>
-    <lastmod>2025-12-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/do-an/aws-infrastructure/</loc>
-  </url><url>
-    <loc>http://localhost:1313/learnings/bai-2/</loc>
-    <lastmod>2025-12-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/do-an/vpn-solution/</loc>
   </url><url>
-    <loc>http://localhost:1313/learnings/bai-3/</loc>
-    <lastmod>2025-12-17T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2025-11-15T08:00:00+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/learnings/bai-4/</loc>
-    <lastmod>2025-12-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/hutech/</loc>
+    <lastmod>2025-11-15T08:00:00+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/learnings/bai-5/</loc>
-    <lastmod>2025-12-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/learnings/bai-6/</loc>
-    <lastmod>2025-12-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/learnings/bai-7/</loc>
-    <lastmod>2025-12-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/learnings/bai-8/</loc>
-    <lastmod>2025-12-22T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/io-stream/</loc>
+    <lastmod>2025-11-15T08:00:00+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/java/</loc>
-    <lastmod>2025-12-22T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-15T08:00:00+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/kho%C3%A1-h%E1%BB%8Dc/</loc>
+    <lastmod>2025-11-15T08:00:00+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/learnings/</loc>
-    <lastmod>2025-12-22T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-15T08:00:00+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/learnings/bai-3/</loc>
+    <lastmod>2025-11-15T08:00:00+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/network-programming/</loc>
+    <lastmod>2025-11-15T08:00:00+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-12-22T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-15T08:00:00+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/rmi/</loc>
-    <lastmod>2025-12-22T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/serialization/</loc>
+    <lastmod>2025-11-15T08:00:00+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-12-22T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-15T08:00:00+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/multithreading/</loc>
-    <lastmod>2025-12-21T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/internet/</loc>
+    <lastmod>2025-11-08T08:00:00+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/udp/</loc>
-    <lastmod>2025-12-20T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/learnings/bai-2/</loc>
+    <lastmod>2025-11-08T08:00:00+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/tcp/</loc>
-    <lastmod>2025-12-19T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-08T08:00:00+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/dns/</loc>
-    <lastmod>2025-12-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/tcp/ip/</loc>
+    <lastmod>2025-11-08T08:00:00+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/socket/</loc>
-    <lastmod>2025-12-18T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/concurrency/</loc>
+    <lastmod>2025-11-01T08:00:00+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/io-streams/</loc>
-    <lastmod>2025-12-17T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/deadlock/</loc>
+    <lastmod>2025-11-01T08:00:00+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/network/</loc>
-    <lastmod>2025-12-16T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/distributed-systems/</loc>
+    <lastmod>2025-11-01T08:00:00+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/theory/</loc>
-    <lastmod>2025-12-16T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/h%E1%BB%8Dc-t%E1%BA%ADp/</loc>
+    <lastmod>2025-11-01T08:00:00+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/inetaddress/</loc>
+    <lastmod>2025-11-01T08:00:00+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/learnings/bai-6/</loc>
+    <lastmod>2025-11-01T08:00:00+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/l%E1%BA%ADp-tr%C3%ACnh-m%E1%BA%A1ng/</loc>
+    <lastmod>2025-11-01T08:00:00+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/learnings/bai-1/</loc>
+    <lastmod>2025-11-01T08:00:00+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/learnings/bai-7/</loc>
+    <lastmod>2025-11-01T08:00:00+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/learnings/bai-5/</loc>
+    <lastmod>2025-11-01T08:00:00+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/multicast/</loc>
+    <lastmod>2025-11-01T08:00:00+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/multithreading/</loc>
+    <lastmod>2025-11-01T08:00:00+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/learnings/bai-4/</loc>
+    <lastmod>2025-11-01T08:00:00+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/rmi/</loc>
+    <lastmod>2025-11-01T08:00:00+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/sockets/</loc>
+    <lastmod>2025-11-01T08:00:00+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/thread/</loc>
+    <lastmod>2025-11-01T08:00:00+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/udp/</loc>
+    <lastmod>2025-11-01T08:00:00+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/url/</loc>
+    <lastmod>2025-11-01T08:00:00+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/web-crawler/</loc>
+    <lastmod>2025-11-01T08:00:00+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/certificates/</loc>
     <lastmod>2024-12-24T00:00:00+00:00</lastmod>
@@ -88,8 +127,6 @@
     <lastmod>2023-10-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/do-an/</loc>
   </url><url>

@@ -105,7 +105,7 @@ weight: 1
         <p class="tech-desc">Thiết kế kiến trúc <b>Public/Private Subnet</b> tách biệt. Cấu hình NAT Gateway cho Private Subnet và Route Tables tối ưu đường đi.</p>
     </div>
     <div class="tech-card">
-        <div class="tech-header"><span>💻</span> EC2 & Auto Scaling</div>
+        <div class="tech-header"><span>💻</span> EC2 </div>
         <p class="tech-desc">Triển khai cụm Server tự động tăng giảm (Scale In/Out) dựa trên CPU Load (>70%), đảm bảo hiệu năng trong giờ cao điểm.</p>
     </div>
     <div class="tech-card">

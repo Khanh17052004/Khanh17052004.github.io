@@ -6,14 +6,14 @@
     <description>Recent content in InetAddress on Nguyen Truong Minh Khanh - Network Admin</description>
     <generator>Hugo -- 0.153.2</generator>
     <language>vi</language>
-    <lastBuildDate>Sun, 28 Dec 2025 10:47:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 01 Nov 2025 08:00:00 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/inetaddress/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>LTM - Buổi 4: Quản lý địa chỉ kết nối mạng</title>
+      <title>Quản lý địa chỉ kết nối mạng - Lập trình mạng (Buổi 4)</title>
       <link>http://localhost:1313/learnings/bai-4/</link>
-      <pubDate>Sun, 28 Dec 2025 10:47:00 +0700</pubDate>
+      <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
       <guid>http://localhost:1313/learnings/bai-4/</guid>
-      <description>Tổng quan về quản lý địa chỉ mạng, lớp InetAddress và URL trong Java.</description>
+      <description>Tổng hợp kiến thức về quản lý địa chỉ mạng, lập trình với lớp URL, InetAddress và bài tập thực hành Web Crawler.</description>
     </item>
   </channel>
 </rss>
