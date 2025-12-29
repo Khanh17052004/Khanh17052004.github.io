@@ -2,178 +2,178 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Nguyen Truong Minh Khanh - Network Admin</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>http://localhost:58170/tags/</link>
     <description>Recent content in Tags on Nguyen Truong Minh Khanh - Network Admin</description>
     <generator>Hugo -- 0.153.2</generator>
     <language>vi</language>
     <lastBuildDate>Sat, 15 Nov 2025 08:00:00 +0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:58170/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>HUTECH</title>
-      <link>http://localhost:1313/tags/hutech/</link>
+      <title>Hutech</title>
+      <link>http://localhost:58170/tags/hutech/</link>
       <pubDate>Sat, 15 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/tags/hutech/</guid>
+      <guid>http://localhost:58170/tags/hutech/</guid>
       <description></description>
     </item>
     <item>
       <title>IO Stream</title>
-      <link>http://localhost:1313/tags/io-stream/</link>
+      <link>http://localhost:58170/tags/io-stream/</link>
       <pubDate>Sat, 15 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/tags/io-stream/</guid>
+      <guid>http://localhost:58170/tags/io-stream/</guid>
       <description></description>
     </item>
     <item>
       <title>Java</title>
-      <link>http://localhost:1313/tags/java/</link>
+      <link>http://localhost:58170/tags/java/</link>
       <pubDate>Sat, 15 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/tags/java/</guid>
+      <guid>http://localhost:58170/tags/java/</guid>
       <description></description>
     </item>
     <item>
       <title>Network Programming</title>
-      <link>http://localhost:1313/tags/network-programming/</link>
+      <link>http://localhost:58170/tags/network-programming/</link>
       <pubDate>Sat, 15 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/tags/network-programming/</guid>
+      <guid>http://localhost:58170/tags/network-programming/</guid>
       <description></description>
     </item>
     <item>
       <title>Serialization</title>
-      <link>http://localhost:1313/tags/serialization/</link>
+      <link>http://localhost:58170/tags/serialization/</link>
       <pubDate>Sat, 15 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/tags/serialization/</guid>
+      <guid>http://localhost:58170/tags/serialization/</guid>
       <description></description>
     </item>
     <item>
       <title>Internet</title>
-      <link>http://localhost:1313/tags/internet/</link>
+      <link>http://localhost:58170/tags/internet/</link>
       <pubDate>Sat, 08 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/tags/internet/</guid>
+      <guid>http://localhost:58170/tags/internet/</guid>
       <description></description>
     </item>
     <item>
       <title>TCP</title>
-      <link>http://localhost:1313/tags/tcp/</link>
+      <link>http://localhost:58170/tags/tcp/</link>
       <pubDate>Sat, 08 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/tags/tcp/</guid>
+      <guid>http://localhost:58170/tags/tcp/</guid>
       <description></description>
     </item>
     <item>
       <title>TCP/IP</title>
-      <link>http://localhost:1313/tags/tcp/ip/</link>
+      <link>http://localhost:58170/tags/tcp/ip/</link>
       <pubDate>Sat, 08 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/tags/tcp/ip/</guid>
+      <guid>http://localhost:58170/tags/tcp/ip/</guid>
       <description></description>
     </item>
     <item>
       <title>Concurrency</title>
-      <link>http://localhost:1313/tags/concurrency/</link>
+      <link>http://localhost:58170/tags/concurrency/</link>
       <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/tags/concurrency/</guid>
+      <guid>http://localhost:58170/tags/concurrency/</guid>
       <description></description>
     </item>
     <item>
       <title>Deadlock</title>
-      <link>http://localhost:1313/tags/deadlock/</link>
+      <link>http://localhost:58170/tags/deadlock/</link>
       <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/tags/deadlock/</guid>
+      <guid>http://localhost:58170/tags/deadlock/</guid>
       <description></description>
     </item>
     <item>
       <title>Distributed Systems</title>
-      <link>http://localhost:1313/tags/distributed-systems/</link>
+      <link>http://localhost:58170/tags/distributed-systems/</link>
       <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/tags/distributed-systems/</guid>
+      <guid>http://localhost:58170/tags/distributed-systems/</guid>
       <description></description>
     </item>
     <item>
       <title>Học Tập</title>
-      <link>http://localhost:1313/tags/h%E1%BB%8Dc-t%E1%BA%ADp/</link>
+      <link>http://localhost:58170/tags/h%E1%BB%8Dc-t%E1%BA%ADp/</link>
       <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/tags/h%E1%BB%8Dc-t%E1%BA%ADp/</guid>
+      <guid>http://localhost:58170/tags/h%E1%BB%8Dc-t%E1%BA%ADp/</guid>
       <description></description>
     </item>
     <item>
       <title>InetAddress</title>
-      <link>http://localhost:1313/tags/inetaddress/</link>
+      <link>http://localhost:58170/tags/inetaddress/</link>
       <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/tags/inetaddress/</guid>
+      <guid>http://localhost:58170/tags/inetaddress/</guid>
       <description></description>
     </item>
     <item>
       <title>Multicast</title>
-      <link>http://localhost:1313/tags/multicast/</link>
+      <link>http://localhost:58170/tags/multicast/</link>
       <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/tags/multicast/</guid>
+      <guid>http://localhost:58170/tags/multicast/</guid>
       <description></description>
     </item>
     <item>
       <title>Multithreading</title>
-      <link>http://localhost:1313/tags/multithreading/</link>
+      <link>http://localhost:58170/tags/multithreading/</link>
       <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/tags/multithreading/</guid>
+      <guid>http://localhost:58170/tags/multithreading/</guid>
       <description></description>
     </item>
     <item>
       <title>RMI</title>
-      <link>http://localhost:1313/tags/rmi/</link>
+      <link>http://localhost:58170/tags/rmi/</link>
       <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/tags/rmi/</guid>
+      <guid>http://localhost:58170/tags/rmi/</guid>
       <description></description>
     </item>
     <item>
       <title>Sockets</title>
-      <link>http://localhost:1313/tags/sockets/</link>
+      <link>http://localhost:58170/tags/sockets/</link>
       <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/tags/sockets/</guid>
+      <guid>http://localhost:58170/tags/sockets/</guid>
       <description></description>
     </item>
     <item>
       <title>Thread</title>
-      <link>http://localhost:1313/tags/thread/</link>
+      <link>http://localhost:58170/tags/thread/</link>
       <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/tags/thread/</guid>
+      <guid>http://localhost:58170/tags/thread/</guid>
       <description></description>
     </item>
     <item>
       <title>UDP</title>
-      <link>http://localhost:1313/tags/udp/</link>
+      <link>http://localhost:58170/tags/udp/</link>
       <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/tags/udp/</guid>
+      <guid>http://localhost:58170/tags/udp/</guid>
       <description></description>
     </item>
     <item>
       <title>URL</title>
-      <link>http://localhost:1313/tags/url/</link>
+      <link>http://localhost:58170/tags/url/</link>
       <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/tags/url/</guid>
+      <guid>http://localhost:58170/tags/url/</guid>
       <description></description>
     </item>
     <item>
       <title>Web Crawler</title>
-      <link>http://localhost:1313/tags/web-crawler/</link>
+      <link>http://localhost:58170/tags/web-crawler/</link>
       <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/tags/web-crawler/</guid>
+      <guid>http://localhost:58170/tags/web-crawler/</guid>
       <description></description>
     </item>
     <item>
       <title>Cisco</title>
-      <link>http://localhost:1313/tags/cisco/</link>
+      <link>http://localhost:58170/tags/cisco/</link>
       <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cisco/</guid>
+      <guid>http://localhost:58170/tags/cisco/</guid>
       <description></description>
     </item>
     <item>
       <title>Networking</title>
-      <link>http://localhost:1313/tags/networking/</link>
+      <link>http://localhost:58170/tags/networking/</link>
       <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/networking/</guid>
+      <guid>http://localhost:58170/tags/networking/</guid>
       <description></description>
     </item>
     <item>
       <title>Routing &amp; Switching</title>
-      <link>http://localhost:1313/tags/routing--switching/</link>
+      <link>http://localhost:58170/tags/routing--switching/</link>
       <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/routing--switching/</guid>
+      <guid>http://localhost:58170/tags/routing--switching/</guid>
       <description></description>
     </item>
   </channel>

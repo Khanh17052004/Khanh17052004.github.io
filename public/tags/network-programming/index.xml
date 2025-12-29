@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Network Programming on Nguyen Truong Minh Khanh - Network Admin</title>
-    <link>http://localhost:1313/tags/network-programming/</link>
+    <link>http://localhost:58170/tags/network-programming/</link>
     <description>Recent content in Network Programming on Nguyen Truong Minh Khanh - Network Admin</description>
     <generator>Hugo -- 0.153.2</generator>
     <language>vi</language>
     <lastBuildDate>Sat, 15 Nov 2025 08:00:00 +0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/network-programming/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:58170/tags/network-programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lập Trình Mạng - Buổi 3: Quản Lý Luồng Nhập Xuất (I/O Streams)</title>
-      <link>http://localhost:1313/learnings/bai-3/</link>
+      <link>http://localhost:58170/learnings/bai-3/</link>
       <pubDate>Sat, 15 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/learnings/bai-3/</guid>
+      <guid>http://localhost:58170/learnings/bai-3/</guid>
       <description>Tìm hiểu về cơ chế nhập xuất dữ liệu trong Java (I/O Streams), phân biệt luồng Byte và luồng Ký tự, cùng kỹ thuật Serialization.</description>
     </item>
     <item>
       <title>Lập Trình Mạng - Buổi 2: Kiến Thức Nền Tảng</title>
-      <link>http://localhost:1313/learnings/bai-2/</link>
+      <link>http://localhost:58170/learnings/bai-2/</link>
       <pubDate>Sat, 08 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/learnings/bai-2/</guid>
+      <guid>http://localhost:58170/learnings/bai-2/</guid>
       <description>Tổng hợp kiến thức nền tảng về Mạng máy tính, các giao thức mạng phổ biến và lý do lựa chọn Java cho lập trình mạng.</description>
     </item>
     <item>
       <title>Lập trình Đa tuyến &amp; Xử lý đồng thời - Lập trình mạng (Buổi 7)</title>
-      <link>http://localhost:1313/learnings/bai-6/</link>
+      <link>http://localhost:58170/learnings/bai-6/</link>
       <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/learnings/bai-6/</guid>
+      <guid>http://localhost:58170/learnings/bai-6/</guid>
       <description>Tổng hợp kiến thức về lập trình đa tuyến (Multithreading), vòng đời của Thread, các vấn đề đồng bộ hóa (Concurrency) và bài tập ứng dụng Chat đa người dùng.</description>
     </item>
     <item>
       <title>Lập Trình Mạng Máy Tính - Tổng Quan Khoá Học</title>
-      <link>http://localhost:1313/learnings/bai-1/</link>
+      <link>http://localhost:58170/learnings/bai-1/</link>
       <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/learnings/bai-1/</guid>
+      <guid>http://localhost:58170/learnings/bai-1/</guid>
       <description>Tổng quan về môn học Lập trình Mạng máy tính: Mục tiêu, nội dung, phương pháp học tập và các tài nguyên cần thiết.</description>
     </item>
     <item>
       <title>Lập trình Multicast UDP &amp; Java RMI - Lập trình mạng (Buổi 8)</title>
-      <link>http://localhost:1313/learnings/bai-7/</link>
+      <link>http://localhost:58170/learnings/bai-7/</link>
       <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/learnings/bai-7/</guid>
+      <guid>http://localhost:58170/learnings/bai-7/</guid>
       <description>Hướng dẫn lập trình truyền thông nhóm (Multicast UDP) và gọi phương thức từ xa (Java RMI) với các bài tập thực hành Chat Room và Calculator.</description>
     </item>
     <item>
       <title>Lập trình Sockets TCP - Lập trình mạng (Buổi 5)</title>
-      <link>http://localhost:1313/learnings/bai-5/</link>
+      <link>http://localhost:58170/learnings/bai-5/</link>
       <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/learnings/bai-5/</guid>
+      <guid>http://localhost:58170/learnings/bai-5/</guid>
       <description>Tổng hợp kiến thức về lập trình TCP Sockets trong Java, mô hình Client-Server và các bài tập thực hành.</description>
     </item>
     <item>
       <title>Quản lý địa chỉ kết nối mạng - Lập trình mạng (Buổi 4)</title>
-      <link>http://localhost:1313/learnings/bai-4/</link>
+      <link>http://localhost:58170/learnings/bai-4/</link>
       <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/learnings/bai-4/</guid>
+      <guid>http://localhost:58170/learnings/bai-4/</guid>
       <description>Tổng hợp kiến thức về quản lý địa chỉ mạng, lập trình với lớp URL, InetAddress và bài tập thực hành Web Crawler.</description>
     </item>
   </channel>

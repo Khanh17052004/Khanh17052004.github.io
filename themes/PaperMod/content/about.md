@@ -105,7 +105,7 @@ padding-top: 15px;
 <div class="about-container">
 
 <div class="about-left-col">
-<img src="/avata.jpg" class="profile-img" alt="Minh Khanh Portrait">
+<img src="/static/avata100.jpg" class="profile-img" alt="Minh Khanh Portrait">
 
 <div class="role-badge">
 <span class="role-title">FUTURE NETWORK ADMIN</span>

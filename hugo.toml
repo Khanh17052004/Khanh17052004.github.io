@@ -15,7 +15,7 @@ enableEmoji = true
         enabled = true
         title = "Minh Khanh"
         subtitle = "Silent Guardian of The Network"
-        imageUrl = "avata1.jpg" # Đảm bảo ảnh này nằm trong thư mục static/avata.jpg
+        imageUrl = "avata100.jpg" # Đảm bảo ảnh này nằm trong thư mục static/avata.jpg
         imageTitle = "Minh Khanh Avatar"
         
         # Kích thước ảnh

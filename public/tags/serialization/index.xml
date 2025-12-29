@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Serialization on Nguyen Truong Minh Khanh - Network Admin</title>
-    <link>http://localhost:1313/tags/serialization/</link>
+    <link>http://localhost:58170/tags/serialization/</link>
     <description>Recent content in Serialization on Nguyen Truong Minh Khanh - Network Admin</description>
     <generator>Hugo -- 0.153.2</generator>
     <language>vi</language>
     <lastBuildDate>Sat, 15 Nov 2025 08:00:00 +0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/serialization/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:58170/tags/serialization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lập Trình Mạng - Buổi 3: Quản Lý Luồng Nhập Xuất (I/O Streams)</title>
-      <link>http://localhost:1313/learnings/bai-3/</link>
+      <link>http://localhost:58170/learnings/bai-3/</link>
       <pubDate>Sat, 15 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/learnings/bai-3/</guid>
+      <guid>http://localhost:58170/learnings/bai-3/</guid>
       <description>Tìm hiểu về cơ chế nhập xuất dữ liệu trong Java (I/O Streams), phân biệt luồng Byte và luồng Ký tự, cùng kỹ thuật Serialization.</description>
     </item>
   </channel>
