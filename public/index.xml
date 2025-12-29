@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Nguyen Truong Minh Khanh - Network Admin</title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:58170/</link>
     <description>Recent content on Nguyen Truong Minh Khanh - Network Admin</description>
     <generator>Hugo -- 0.153.2</generator>
     <language>vi</language>
     <lastBuildDate>Sat, 15 Nov 2025 08:00:00 +0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:58170/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Triển khai Hạ tầng Mạng Doanh nghiệp trên AWS</title>
-      <link>http://localhost:1313/do-an/aws-infrastructure/</link>
+      <link>http://localhost:58170/do-an/aws-infrastructure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/do-an/aws-infrastructure/</guid>
+      <guid>http://localhost:58170/do-an/aws-infrastructure/</guid>
       <description>Thiết kế hệ thống High Availability và Auto Scaling trên nền tảng Cloud.</description>
     </item>
     <item>
       <title>Xây dựng hệ thống VPN Client-to-Site với OpenVPN trên AWS</title>
-      <link>http://localhost:1313/do-an/vpn-solution/</link>
+      <link>http://localhost:58170/do-an/vpn-solution/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/do-an/vpn-solution/</guid>
+      <guid>http://localhost:58170/do-an/vpn-solution/</guid>
       <description>Giải pháp truy cập an toàn vào Private Subnet thông qua Internet Gateway và OpenVPN.</description>
     </item>
     <item>
       <title>Lập Trình Mạng - Buổi 3: Quản Lý Luồng Nhập Xuất (I/O Streams)</title>
-      <link>http://localhost:1313/learnings/bai-3/</link>
+      <link>http://localhost:58170/learnings/bai-3/</link>
       <pubDate>Sat, 15 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/learnings/bai-3/</guid>
+      <guid>http://localhost:58170/learnings/bai-3/</guid>
       <description>Tìm hiểu về cơ chế nhập xuất dữ liệu trong Java (I/O Streams), phân biệt luồng Byte và luồng Ký tự, cùng kỹ thuật Serialization.</description>
     </item>
     <item>
       <title>Lập Trình Mạng - Buổi 2: Kiến Thức Nền Tảng</title>
-      <link>http://localhost:1313/learnings/bai-2/</link>
+      <link>http://localhost:58170/learnings/bai-2/</link>
       <pubDate>Sat, 08 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/learnings/bai-2/</guid>
+      <guid>http://localhost:58170/learnings/bai-2/</guid>
       <description>Tổng hợp kiến thức nền tảng về Mạng máy tính, các giao thức mạng phổ biến và lý do lựa chọn Java cho lập trình mạng.</description>
     </item>
     <item>
       <title>Lập trình Đa tuyến &amp; Xử lý đồng thời - Lập trình mạng (Buổi 7)</title>
-      <link>http://localhost:1313/learnings/bai-6/</link>
+      <link>http://localhost:58170/learnings/bai-6/</link>
       <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/learnings/bai-6/</guid>
+      <guid>http://localhost:58170/learnings/bai-6/</guid>
       <description>Tổng hợp kiến thức về lập trình đa tuyến (Multithreading), vòng đời của Thread, các vấn đề đồng bộ hóa (Concurrency) và bài tập ứng dụng Chat đa người dùng.</description>
     </item>
     <item>
       <title>Lập Trình Mạng Máy Tính - Tổng Quan Khoá Học</title>
-      <link>http://localhost:1313/learnings/bai-1/</link>
+      <link>http://localhost:58170/learnings/bai-1/</link>
       <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/learnings/bai-1/</guid>
+      <guid>http://localhost:58170/learnings/bai-1/</guid>
       <description>Tổng quan về môn học Lập trình Mạng máy tính: Mục tiêu, nội dung, phương pháp học tập và các tài nguyên cần thiết.</description>
     </item>
     <item>
       <title>Lập trình Multicast UDP &amp; Java RMI - Lập trình mạng (Buổi 8)</title>
-      <link>http://localhost:1313/learnings/bai-7/</link>
+      <link>http://localhost:58170/learnings/bai-7/</link>
       <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/learnings/bai-7/</guid>
+      <guid>http://localhost:58170/learnings/bai-7/</guid>
       <description>Hướng dẫn lập trình truyền thông nhóm (Multicast UDP) và gọi phương thức từ xa (Java RMI) với các bài tập thực hành Chat Room và Calculator.</description>
     </item>
     <item>
       <title>Lập trình Sockets TCP - Lập trình mạng (Buổi 5)</title>
-      <link>http://localhost:1313/learnings/bai-5/</link>
+      <link>http://localhost:58170/learnings/bai-5/</link>
       <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/learnings/bai-5/</guid>
+      <guid>http://localhost:58170/learnings/bai-5/</guid>
       <description>Tổng hợp kiến thức về lập trình TCP Sockets trong Java, mô hình Client-Server và các bài tập thực hành.</description>
     </item>
     <item>
       <title>Quản lý địa chỉ kết nối mạng - Lập trình mạng (Buổi 4)</title>
-      <link>http://localhost:1313/learnings/bai-4/</link>
+      <link>http://localhost:58170/learnings/bai-4/</link>
       <pubDate>Sat, 01 Nov 2025 08:00:00 +0700</pubDate>
-      <guid>http://localhost:1313/learnings/bai-4/</guid>
+      <guid>http://localhost:58170/learnings/bai-4/</guid>
       <description>Tổng hợp kiến thức về quản lý địa chỉ mạng, lập trình với lớp URL, InetAddress và bài tập thực hành Web Crawler.</description>
     </item>
     <item>
       <title>Chứng Chỉ &amp; Bằng Cấp</title>
-      <link>http://localhost:1313/certificates/</link>
+      <link>http://localhost:58170/certificates/</link>
       <pubDate>Tue, 24 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/certificates/</guid>
+      <guid>http://localhost:58170/certificates/</guid>
       <description>&lt;style&gt;
 /* CSS Cũ giữ nguyên */
 .post-title{margin-bottom:40px;text-align:center}.post-meta{display:none}.cert-container{display:flex;flex-direction:column;gap:30px;font-family:&#39;Segoe UI&#39;,sans-serif;max-width:800px;margin:0 auto}
@@ -103,7 +103,7 @@
 &lt;div class=&#34;cert-container&#34;&gt;
 &lt;div class=&#34;cert-card&#34; onclick=&#34;showCert(&#39;/network.png&#39;)&#34;&gt; 
 &lt;div class=&#34;cert-img-box&#34;&gt;
-&lt;img src=&#34;http://localhost:1313/network.png&#34; alt=&#34;Networking Basics Badge&#34;&gt;
+&lt;img src=&#34;http://localhost:58170/network.png&#34; alt=&#34;Networking Basics Badge&#34;&gt;
 &lt;/div&gt;
 &lt;div class=&#34;cert-info&#34;&gt;
 &lt;div class=&#34;cert-header&#34;&gt;
@@ -124,7 +124,7 @@
 &lt;/div&gt;
 &lt;div class=&#34;cert-card&#34; onclick=&#34;showCert(&#39;/java1.png&#39;)&#34;&gt;
 &lt;div class=&#34;cert-img-box&#34;&gt;
-&lt;img src=&#34;http://localhost:1313/java1.png&#34; alt=&#34;JS Essentials 1 Badge&#34;&gt;
+&lt;img src=&#34;http://localhost:58170/java1.png&#34; alt=&#34;JS Essentials 1 Badge&#34;&gt;
 &lt;/div&gt;
 &lt;div class=&#34;cert-info&#34;&gt;
 &lt;div class=&#34;cert-header&#34;&gt;
@@ -145,7 +145,7 @@
 &lt;/div&gt;
 &lt;div class=&#34;cert-card&#34; onclick=&#34;showCert(&#39;/java2.png&#39;)&#34;&gt;
 &lt;div class=&#34;cert-img-box&#34;&gt;
-&lt;img src=&#34;http://localhost:1313/java2.png&#34; alt=&#34;JS Essentials 2 Badge&#34;&gt;
+&lt;img src=&#34;http://localhost:58170/java2.png&#34; alt=&#34;JS Essentials 2 Badge&#34;&gt;
 &lt;/div&gt;
 &lt;div class=&#34;cert-info&#34;&gt;
 &lt;div class=&#34;cert-header&#34;&gt;
@@ -166,7 +166,7 @@
 &lt;/div&gt;
 &lt;div class=&#34;cert-card card-school&#34; onclick=&#34;showCert(&#39;/hutech.png&#39;)&#34;&gt;
 &lt;div class=&#34;cert-img-box&#34;&gt;
-&lt;img src=&#34;http://localhost:1313/hutech.png&#34; alt=&#34;HUTECH Logo&#34;&gt;
+&lt;img src=&#34;http://localhost:58170/hutech.png&#34; alt=&#34;HUTECH Logo&#34;&gt;
 &lt;/div&gt;
 &lt;div class=&#34;cert-info&#34;&gt;
 &lt;div class=&#34;cert-header&#34;&gt;
@@ -208,16 +208,16 @@ closeModal();
     </item>
     <item>
       <title>Cisco Certified Network Associate (CCNA)</title>
-      <link>http://localhost:1313/certifications/ccna/</link>
+      <link>http://localhost:58170/certifications/ccna/</link>
       <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/certifications/ccna/</guid>
+      <guid>http://localhost:58170/certifications/ccna/</guid>
       <description>Chứng chỉ xác nhận kiến thức nền tảng vững chắc về hạ tầng mạng, định tuyến và chuyển mạch.</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/about/</link>
+      <link>http://localhost:58170/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>http://localhost:58170/about/</guid>
       <description>&lt;style&gt;
 /* --- CONTAINER CHÍNH (Chia 2 cột) --- */
 .about-container {
@@ -318,7 +318,7 @@ padding-top: 15px;
 &lt;/style&gt;
 &lt;div class=&#34;about-container&#34;&gt;
 &lt;div class=&#34;about-left-col&#34;&gt;
-&lt;img src=&#34;http://localhost:1313/avata1.jpg&#34; class=&#34;profile-img&#34; alt=&#34;Minh Khanh Portrait&#34;&gt;
+&lt;img src=&#34;http://localhost:58170/avata100.jpg&#34; class=&#34;profile-img&#34; alt=&#34;Minh Khanh Portrait&#34;&gt;
 &lt;div class=&#34;role-badge&#34;&gt;
 &lt;span class=&#34;role-title&#34;&gt;FUTURE NETWORK ADMIN&lt;/span&gt;
 &lt;span class=&#34;role-sub&#34;&gt;HUTECH UNIVERSITY&lt;/span&gt;
@@ -331,9 +331,9 @@ padding-top: 15px;
     </item>
     <item>
       <title>Liên Hệ</title>
-      <link>http://localhost:1313/contact/</link>
+      <link>http://localhost:58170/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/contact/</guid>
+      <guid>http://localhost:58170/contact/</guid>
       <description>Contact Info</description>
     </item>
   </channel>
