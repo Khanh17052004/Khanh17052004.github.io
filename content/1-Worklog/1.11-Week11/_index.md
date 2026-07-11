@@ -1,5 +1,5 @@
 ---
-title: "Weekly 11 Blog: Finalizing Capstone Project & Evaluating Architecture via AWS Well-Architected Framework"
+title: "Week 11 Blog: Finalizing Capstone Project & Evaluating Architecture via AWS Well-Architected Framework"
 date: 2024-01-01
 weight: 2
 chapter: false
