@@ -6,121 +6,105 @@ chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
+## Introduction
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+This marks the third major tech event in my internship journey. Returning to the **FCAJ (First Cloud AI Journey)** community after an impressive session back in May, this June 2026 edition at Bitexco offered a completely different atmosphere: highly professional, large-scale with two simultaneous presentation halls, and an expansive livestream audience.
 
-### Event Objectives
+The event brought together industry leaders from *AWS, CloudThinker, Renova Cloud, Cloud Kinetics*, and *Noventis*. The core takeaway was crystal clear: **GenAI has officially moved past the stage of shiny demos and entered the harsh reality of enterprise production — where every solution must address access control, operational costs, and security risks.**
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+> Instead of high-level promises, speakers showcased real-world production systems: from seamless Vietnamese Voice Bots handling product inquiries to DevOps AI Agents autonomously investigating system anomalies under simulated attacks.
 
-### Speakers
+---
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+## Setting My Targets: Participation Goals
 
-### Key Highlights
+As a Computer Networks student, I set specific technical questions to answer during this event:
+* **Multi-agent Architectures:** Understand why production engineering teams divide tasks among multiple narrow agents rather than relying on a single omnipotent master model.
+* **Localized Speech Processing:** Explore how to optimize Voice AI systems for Vietnamese — a low-resource language that rarely gets detailed coverage in global tech documentation.
+* **DevOps Automation Boundaries:** Define where automated self-healing ends and human oversight must step in.
+* **Enterprise Data Isolation:** Evaluate the practical implementation of private networking (PrivateLink, Interface Endpoints) that I previously learned in VPC networking labs.
 
-#### Identifying the drawbacks of legacy application architecture
+---
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+## Event Details
 
-#### Transitioning to modern application architecture – Microservices
+* **Date:** Saturday morning, June 27, 2026.
+* **Venue:** 26th & 36th Floor, Bitexco Financial Tower (2 Hai Trieu Street, Ben Nghe Ward, District 1, Ho Chi Minh City).
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+---
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+## Agenda Overview & Timeline
 
-#### Domain-Driven Design (DDD)
+The sessions were meticulously structured around the corporate AI adoption lifecycle: starting with foundational engineering mindsets, moving into specialized business line workflows, and closing with robust network security architectures.
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+| Session | Speakers | Organization | Core Topic |
+| :--- | :--- | :--- | :--- |
+| **01** | Steve Tran | CloudThinker | Future of Cloud Infrastructure & Multi-agent Frameworks |
+| **02** | Hieu Nghi, Kiet, Trung | R-AI / Renova Cloud | Optimizing Vietnamese Voice AI for Banking Operations |
+| **03** | Bao & Nguyen | Cloud Kinetics | DevOps AI Agents: Reducing MTTR from Reactive to Proactive |
+| **04** | Truong & Minh Anh | Noventis | Streamlining HR Management with Amazon Q Business |
+| **05** | Toan & Nghi | AWS / Renova Cloud | Isolating Enterprise AI & MCP Connections via Private Networking |
 
-#### Event-Driven Architecture
+---
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+## Session Summaries & Technical Deep Dives
 
-#### Compute Evolution
+### Session 1: Redefining Cloud Infrastructure with Multi-agent Engineering
+The opening session featured Steve Tran, founder of CloudThinker. His most impactful career insight was acknowledging that he failed cloud certification exams multiple times early on due to foundational knowledge gaps. The lesson here is highly practical: **A solid understanding of core principles and market foresight matters far more than rushing to accumulate certifications.**
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+On the technical side, he addressed a major architectural choice: **Why deploy a Multi-agent framework over a Single Agent?**
+* **Role-Based Access Control (RBAC):** Each agent is locked down to a minimal set of permissions required for its specific task, preventing privilege escalation risks.
+* **Context Window Optimization:** By isolating data scopes, agents avoid processing bloated input contexts, leading to faster responses and reduced token spending.
 
-#### Amazon Q Developer
+As microservices expand beyond human management capacity, specialized AI agents offer the only scalable solution to clear the technological complexity bottleneck.
 
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+### Session 2: Breaking the Vietnamese Voice AI Bottleneck
+Since Vietnamese is classified as a low-resource language, direct Speech-to-Speech models often struggle with accuracy. The speakers highlighted a highly practical architectural chain: `Speech-to-Text (STT) -> LLM -> Text-to-Speech (TTS)`. While this multi-step approach introduces slight latency, it offers a crucial enterprise advantage: engineering teams can insert text-based **Guardrails** to sanitize content before it gets converted back to voice.
 
-### Key Takeaways
+Enterprise requirements in the banking sector (such as VIB and VPBank) introduce complex edge cases: managing real-time speech interruptions, adapting to local regional dialects (achieved efficiently by mixing just 10-20% localized audio into training sets), and determining natural conversational pauses.
 
-#### Design Mindset
+### Session 3: DevOps AI Agents — Shifting from Reactive to Proactive Operations
+The automated infrastructure management framework showcased follows a clean 4-step pipeline: **Categorize (extract logs on triggers) -> Investigate (root-cause analysis via system topology) -> Mitigation Plan (generate fixes) -> Improve (analyze historical patterns)**.
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+> **Core Philosophy:** Observability data (Logs, Metrics, Traces) is the fuel that powers AI. Without high-quality system data collections, even the most advanced AI agent remains completely ineffective.
 
-#### Technical Architecture
+A real-world case study demonstrated how a large organization slashed Mean Time to Resolution (MTTR) from 2 hours to just 28 minutes (a 77% drop) during a distributed denial-of-service (DDoS) incident through automated log parsing and rapid mitigation proposals.
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+### Session 4: Integrating Amazon Q Business into HR Lifecycles
+This session presented an alternative use case for generative AI: deploying highly secure, internal AI engines to prevent sensitive applicant data from leaking into public models. Amazon Q demonstrated impressive zero-shot reasoning capabilities, such as accurately filtering out a chemical engineer applying for a cloud role based on abstract job description (JD) mismatches rather than relying on simple keyword matching. The platform connects directly with enterprise data lakes (GitHub, Jira, Google Drive) without locking the enterprise into a single closed cloud vendor ecosystem.
 
-#### Modernization Strategy
+### Session 5: Hardening Network Boundaries for Enterprise AI & MCP
+As the most technically intensive presentation, this session directly tied into my core network engineering studies. When utilizing the **Model Context Protocol (MCP)** to connect Amazon Q with third-party environments (such as GitHub, Jira, or messaging services), routing traffic over the public internet is a major security vulnerability for highly regulated industries like banking (BFSI).
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+The architectural solution utilizes a combination of **VPC Connections, Interface Endpoints (AWS PrivateLink)**, and **Route 53 Resolvers** to force all data transit to remain strictly within isolated internal networks, eliminating Man-in-the-Middle (MITM) and internet-facing DDoS vectors. The speakers provided an honest Cost-Benefit Analysis (CBA), noting that maintaining this private security layer costs roughly $250 to $350 per month. Enterprises must weigh this baseline infrastructure cost against the catastrophic downside risks of exposing internal strategic data assets.
 
-### Applying to Work
+---
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+## Key Takeaways
 
-### Event Experience
+1. **Multi-agent Governance:** Splitting models into granular, single-purpose components is a security and access control decision, not just a performance optimization.
+2. **Architectural Trade-offs:** The sequential STT-LLM-TTS pipeline proves that accepting a slight latency trade-off is worthwhile to gain robust text-based content control.
+3. **Observability is the Foundation:** Intelligent infrastructure automation requires mature logging and metric aggregation. Clean data architectures must precede AI implementation.
+4. **Human-in-the-Loop Safeguards:** For critical actions—such as executing infrastructure modifications or processing sensitive data pipelines—human approval remains a non-negotiable safety check.
+5. **Practical FinOps Mindset:** Every high-security network design carries an explicit dollar cost. Engineers must master financial modeling alongside technical configurations.
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+---
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+## Action Plan for Personal Projects (Hugo Blog & Network Labs)
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+* **Expand My VPC Labs:** Instead of connecting to AWS Bedrock APIs over the public internet, I will configure secure private access using **VPC Interface Endpoints (PrivateLink)** to gain hands-on experience with enterprise-grade network isolation.
+* **Enforce Infrastructure Observability:** Commit to enabling detailed CloudWatch Logs and Metrics tracking across all my server and network simulation labs to build a reliable data foundation for future automation experiments.
+* **Design a Multi-agent Workflow:** Build a mini-project utilizing two distinct, narrow-permission agents (applying RBAC principles) and incorporate a manual human approval gate before any destructive system commands run.
+* **Optimize My Resume for AI Scanners:** Refine the project descriptions on my Hugo PaperMod portfolio to be clear, structured, and explicit, ensuring they are optimized for modern AI parsing algorithms during initial recruitment filtering.
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+## Conclusion
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+FCAJ Community Day June 2026 completely reframed how I approach technology: moving from a student fascinated by surface-level AI capabilities to an aspiring systems engineer focusing on data security, routing constraints, and structural costs. Speed of execution is everything — it's time to stop overthinking and start building these production concepts in my private lab environments today.
 
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+#### Event Gallery
 
-#### Some event photos
-*Add your event photos here*  
+![](/images/1.png)
 
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+![](/images/2.png)
+
+![](/images/3.png)
